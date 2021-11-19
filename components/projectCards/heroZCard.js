@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { FaFigma } from "react-icons/fa";
 
-export default function HeroXCard() {
+export default function HeroZCard() {
   return (
     <HStack
       p={4}
@@ -49,10 +49,10 @@ export default function HeroXCard() {
         <VStack spacing={0} align="start">
           <HStack>
             <Text fontWeight="bold" fontSize="md" noOfLines={2}>
-              HeroX
+              HeroZ
             </Text>
             <Tag size="sm">March 2021 - April 2021</Tag>
-            <Tag size="sm" bg={useColorModeValue("blue.200", "blue.700")}>
+            <Tag size="sm" bg={useColorModeValue("yellow.200", "yello.700")}>
               UX/UI Designer
             </Tag>
             <Tag size="sm" bg={useColorModeValue("green.200", "green.700")}>
@@ -68,7 +68,7 @@ export default function HeroXCard() {
             Gen-Z individuals in order to improve financial wellbeing.
           </Text>
           <HStack pt={3}>
-            <Button leftIcon={<FaFigma />} colorScheme="teal" variant="solid">
+            <Button leftIcon={<FaFigma />} colorScheme="blue" variant="solid">
               <Link
                 href="https://www.figma.com/proto/7b3JlZ92EYiGSkeuXJkMix/Wireframe---Sandbox-Challenge?node-id=66%3A4&scaling=scale-down&page-id=66%3A4"
                 isExternal

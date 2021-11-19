@@ -52,7 +52,7 @@ export default function ConnectMeCard() {
               ConnectMe
             </Text>
             <Tag size="sm">August 2020 - Present</Tag>
-            <Tag size="sm" bg={useColorModeValue("blue.200", "blue.700")}>
+            <Tag size="sm" bg={useColorModeValue("yellow.200", "yellow.700")}>
               UX/UI Designer
             </Tag>
             <Tag size="sm" bg={useColorModeValue("green.200", "green.700")}>
@@ -69,7 +69,7 @@ export default function ConnectMeCard() {
             wellbeing.
           </Text>
           <HStack pt={3}>
-            <Button leftIcon={<FaFigma />} colorScheme="teal" variant="solid">
+            <Button leftIcon={<FaFigma />} colorScheme="blue" variant="solid">
               <Link
                 href="https://www.figma.com/proto/S5wzsWY28hpPvpa7L1WqQo/ConnectMe?node-id=2%3A11&scaling=scale-down&page-id=0%3A1"
                 isExternal

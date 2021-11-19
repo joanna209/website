@@ -1,51 +1,60 @@
-import React from "react";
 import {
-  HStack,
-  Button,
-  useColorModeValue,
+  Box,
+  Container,
   Text,
+  Stack,
+  useColorModeValue,
+  IconButton,
+  Link,
+  Tooltip,
 } from "@chakra-ui/react";
-import NextLink from "next/link";
+import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
 
-export default function Footer () {
-  const date = new Date().getFullYear();
-
-  function FooterLink(props) {
-    const { href, name, ...rest } = props;
-
-    return (
-      <NextLink href={href} passHref>
-        <Button
-          variant="unstyled"
-          {...rest}
-          color={useColorModeValue("neutral.800", "neutralD.800")}
-          _hover={{ color: useColorModeValue("neutral.1000", "neutralD.1000") }}
-        >
-          {name}
-        </Button>
-      </NextLink>
-    );
-  }
-
+export default function Footer() {
   return (
-    <Container>
-      <HStack
-        justify="space-between"
-        w="100%"
-        display={{ base: "none", md: "flex" }}
+    <Box
+      bg={useColorModeValue("gray.100", "gray.900")}
+      color={useColorModeValue("gray.700", "gray.200")}
+    >
+      <Container
+        as={Stack}
+        maxW={"4xl"}
         py={4}
+        direction={{ base: "column", md: "row" }}
+        justify={{ base: "center", md: "space-between" }}
+        align={{ base: "center", md: "center" }}
       >
-        <Text
-          fontSize="sm"
-          color={useColorModeValue("neutral.800", "neutralD.800")}
-        >
-          © {date} Daniel Wirtz{" "}
-        </Text>
-        <HStack spacing={4}>
-          <FooterLink href="/disclaimer" name="Disclaimer" />
-          <FooterLink href="/privacy" name="Privacy" />
-        </HStack>
-      </HStack>
-    </Container>
+        <Text>© 2021 Joanna He. All rights reserved</Text>
+        <Stack direction={"row"} spacing={6}>
+          <Tooltip label="LinkedIn" aria-label="LinkedIn tooltip">
+            <Link href="https://www.linkedin.com/in/joannahe9/" isExternal>
+              <IconButton
+                colorScheme="gray"
+                aria-label="LinkedIn"
+                icon={<FaLinkedinIn />}
+              />
+            </Link>
+          </Tooltip>
+          <Tooltip label="Github" aria-label="Github tooltip">
+            <Link href="https://github.com/joanna209" isExternal>
+              <IconButton
+                colorScheme="gray"
+                aria-label="Github"
+                icon={<FaGithub />}
+              />
+            </Link>
+          </Tooltip>
+          <Tooltip label="Email" aria-label="Email tooltip">
+            <Link href="mailto:joanna.he3@gmail.com" isExternal>
+              <IconButton
+                colorScheme="gray"
+                aria-label="Email"
+                icon={<FaEnvelope />}
+              />
+            </Link>
+          </Tooltip>
+        </Stack>
+      </Container>
+    </Box>
   );
-};
+}

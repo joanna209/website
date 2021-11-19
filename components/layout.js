@@ -1,11 +1,11 @@
 import React, {useEffect} from "react";
-import NavBar from "./navbar";
+import Navbar from "./navbar";
 import Footer from "./footer";
 
 const Layout = ({children}) => {
   
   return <div>
-    <NavBar />
+    <Navbar />
     {children}
     <Footer />
   </div>;

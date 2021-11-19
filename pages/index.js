@@ -12,14 +12,13 @@ export default function Home() {
       <Head>
         <title>Joanna He</title>
         <meta name="description" content="Joanna's Portfolio" />
-        <link rel="icon" href="../public/logo.svg" />
+        <link rel="icon" href="https://i.imgur.com/gqC0mnt.jpg" />
       </Head>
 
       <VStack spacing={12}>
         <VStack spacing={4} align="start">
-
           {/* Start of About Me Section */}
-          <Heading fontSize="3xl" pt={3}>
+          <Heading fontSize="3xl" pt={10}>
             Hi, I'm Joanna{" "}
             <span role="img" aria-label="waving-hand">
               👋
@@ -33,7 +32,7 @@ export default function Home() {
             volunteering at the{" "}
             <Link
               href="https://www.facebook.com/unsw.wit"
-              color="teal.500"
+              color="blue.500"
               isExternal
             >
               UNSW Women in Technology (WIT)
@@ -72,11 +71,11 @@ export default function Home() {
               🌟
             </span>
           </Heading>
-          <Text color={"gray.500"} maxW={"3xl"} fontSize="2xl">
+          <Text color={"gray.500"} maxW={"3xl"} fontSize="2xl" pb={10}>
             Feel free to shoot me an{" "}
             <Link
               href="mailto:joanna.he3@gmail.com"
-              color="teal.500"
+              color="blue.500"
               isExternal
             >
               email
@@ -84,7 +83,7 @@ export default function Home() {
             or message me on{" "}
             <Link
               href="https://www.linkedin.com/in/joannahe9/"
-              color="teal.500"
+              color="blue.500"
               isExternal
             >
               LinkedIn

@@ -53,7 +53,7 @@ export default function TribespotCard() {
               Tribespot
             </Text>
             <Tag size="sm">June 2021 - July 2021</Tag>
-            <Tag size="sm" bg={useColorModeValue("blue.200", "blue.700")}>
+            <Tag size="sm" bg={useColorModeValue("yellow.200", "yellow.700")}>
               UX/UI Designer
             </Tag>
             <Tag size="sm" bg={useColorModeValue("green.200", "green.700")}>
@@ -70,12 +70,12 @@ export default function TribespotCard() {
           </Text>
 
           <HStack pt={3}>
-            <Button leftIcon={<FaLink />} colorScheme="teal" variant="solid">
+            <Button leftIcon={<FaLink />} colorScheme="blue" variant="solid">
               <Link href="https://tribespot.co/" isExternal>
                 Website
               </Link>
             </Button>
-            <Button leftIcon={<FaFigma />} colorScheme="teal" variant="solid">
+            <Button leftIcon={<FaFigma />} colorScheme="blue" variant="solid">
               <Link
                 href="https://www.figma.com/proto/S5wzsWY28hpPvpa7L1WqQo/ConnectMe?node-id=2%3A11&scaling=scale-down&page-id=0%3A1"
                 isExternal

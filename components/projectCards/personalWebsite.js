@@ -52,7 +52,7 @@ import {
                 Portfolio Website
               </Text>
               <Tag size="sm">November 2021 - Present</Tag>
-              <Tag size="sm" bg={useColorModeValue("blue.200", "blue.700")}>
+              <Tag size="sm" bg={useColorModeValue("yellow.200", "yellow.700")}>
                 Full Stack Developer
               </Tag>
               <Tag size="sm" bg={useColorModeValue("green.200", "green.700")}>
@@ -68,7 +68,7 @@ import {
             </Text>
   
             <HStack pt={3}>
-              <Button leftIcon={<FaGithub />} colorScheme="teal" variant="solid">
+              <Button leftIcon={<FaGithub />} colorScheme="blue" variant="solid">
                 <Link
                   href="https://github.com/joanna209/website"
                   isExternal
