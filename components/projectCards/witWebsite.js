@@ -64,7 +64,7 @@ import {
               fontSize="sm"
               color={useColorModeValue("neutral.1000", "neutralD.1000")}
             >
-              A website that aims to inform students about WIT. 
+              A website that aims to inform the community about WIT. In particular, this includes information about our events, our mission and much more! 
             </Text>
   
             <HStack pt={3}>
