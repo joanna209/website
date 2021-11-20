@@ -64,9 +64,7 @@ import {
               fontSize="sm"
               color={useColorModeValue("neutral.1000", "neutralD.1000")}
             >
-              An all in one platform that aims to connect UNSW students with an
-              appropriate service to aid in their overall mental health and
-              wellbeing.
+              A website that aims to inform students about WIT. 
             </Text>
   
             <HStack pt={3}>
