@@ -27,7 +27,7 @@ export default function HeroZCard() {
       transition-timing-function="spring(1 100 10 10)"
       _hover={{ transform: "translateY(-4px)", shadow: "lg" }}
     >
-      {/*ConnectMe Card*/}
+      {/*Start of HeroZ Card*/}
       <LinkBox
         rounded="lg"
         position="relative"
@@ -48,20 +48,20 @@ export default function HeroZCard() {
       <VStack align="start" justify="flex-start" spacing={1}>
         <VStack spacing={0} align="start">
           <HStack>
-            <Text fontWeight="bold" fontSize="md" noOfLines={2}>
+            <Text fontWeight="bold" fontSize={{ base: "sm", md: "md", lg: "lg" }} noOfLines={2}>
               HeroZ
             </Text>
-            <Tag size="sm">March 2021 - April 2021</Tag>
-            <Tag size="sm" bg={useColorModeValue("yellow.200", "yello.700")}>
+            <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }}>March 2021 - April 2021</Tag>
+            <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }} bg={useColorModeValue("yellow.200", "yellow.700")}>
               UX/UI Designer
             </Tag>
-            <Tag size="sm" bg={useColorModeValue("green.200", "green.700")}>
+            <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }} bg={useColorModeValue("green.200", "green.700")}>
               Figma
             </Tag>
           </HStack>
 
           <Text
-            fontSize="sm"
+            fontSize={{ base: "xs", md: "sm", lg: "md" }}
             color={useColorModeValue("neutral.1000", "neutralD.1000")}
           >
             A mobile app that aims to provide financial literacy education to
@@ -72,6 +72,7 @@ export default function HeroZCard() {
               <Link
                 href="https://www.figma.com/proto/7b3JlZ92EYiGSkeuXJkMix/Wireframe---Sandbox-Challenge?node-id=66%3A4&scaling=scale-down&page-id=66%3A4"
                 isExternal
+                fontSize={{ base: "xs", md: "sm", lg: "md" }}
               >
                 Prototype
               </Link>
@@ -79,7 +80,7 @@ export default function HeroZCard() {
           </HStack>
         </VStack>
       </VStack>
-      {/*End of ConnectMe Card*/}
+      {/*End of HeroZ Card*/}
     </HStack>
   );
 }

@@ -48,20 +48,20 @@ import {
         <VStack align="start" justify="flex-start" spacing={1}>
           <VStack spacing={0} align="start">
             <HStack>
-              <Text fontWeight="bold" fontSize="md" noOfLines={2}>
+              <Text fontWeight="bold" fontSize={{ base: "sm", md: "md", lg: "lg" }} noOfLines={2}>
                 Portfolio Website
               </Text>
-              <Tag size="sm">November 2021 - Present</Tag>
-              <Tag size="sm" bg={useColorModeValue("yellow.200", "yellow.700")}>
+              <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }}>November 2021 - Present</Tag>
+              <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }} bg={useColorModeValue("yellow.200", "yellow.700")}>
                 Full Stack Developer
               </Tag>
-              <Tag size="sm" bg={useColorModeValue("green.200", "green.700")}>
-                JavaScript, Next.js
+              <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }} bg={useColorModeValue("green.200", "green.700")}>
+                Next.js, ChakraUI
               </Tag>
             </HStack>
   
             <Text
-              fontSize="sm"
+              fontSize={{ base: "xs", md: "sm", lg: "md" }}
               color={useColorModeValue("neutral.1000", "neutralD.1000")}
             >
               My personal website to introduce myself, showcase my technical and UX/UI projects as well as upcoming blog posts. 
@@ -72,6 +72,7 @@ import {
                 <Link
                   href="https://github.com/joanna209/website"
                   isExternal
+                  fontSize={{ base: "xs", md: "sm", lg: "md" }}
                 >
                   Github
                 </Link>
