@@ -26,7 +26,7 @@ export default function Navbar() {
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <Box>
             <Link href="/">
-              <IconButton>
+              <IconButton bg={useColorModeValue("gray.100", "gray.900")}>
                 <Avatar size={"sm"} src={"https://i.imgur.com/gqC0mnt.jpg"} />
               </IconButton>
             </Link>
@@ -35,7 +35,7 @@ export default function Navbar() {
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={7}>
               <Tooltip label="Dark Mode" aria-label="Dark mode tooltip">
-                <Button onClick={toggleColorMode}>
+                <Button onClick={toggleColorMode} bg={useColorModeValue("gray.100", "gray.900")}>
                   {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
                 </Button>
               </Tooltip>

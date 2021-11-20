@@ -29,7 +29,7 @@ export default function Footer() {
           <Tooltip label="LinkedIn" aria-label="LinkedIn tooltip">
             <Link href="https://www.linkedin.com/in/joannahe9/" isExternal>
               <IconButton
-                colorScheme="gray"
+                bg={useColorModeValue("gray.100", "gray.900")}
                 aria-label="LinkedIn"
                 icon={<FaLinkedinIn />}
               />
@@ -38,7 +38,7 @@ export default function Footer() {
           <Tooltip label="Github" aria-label="Github tooltip">
             <Link href="https://github.com/joanna209" isExternal>
               <IconButton
-                colorScheme="gray"
+                bg={useColorModeValue("gray.100", "gray.900")}
                 aria-label="Github"
                 icon={<FaGithub />}
               />
@@ -47,7 +47,7 @@ export default function Footer() {
           <Tooltip label="Email" aria-label="Email tooltip">
             <Link href="mailto:joanna.he3@gmail.com" isExternal>
               <IconButton
-                colorScheme="gray"
+                bg={useColorModeValue("gray.100", "gray.900")}
                 aria-label="Email"
                 icon={<FaEnvelope />}
               />

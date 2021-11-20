@@ -52,7 +52,7 @@ export default function HeroZCard() {
               HeroZ
             </Text>
             <Tag size="sm">March 2021 - April 2021</Tag>
-            <Tag size="sm" bg={useColorModeValue("yellow.200", "yello.700")}>
+            <Tag size="sm" bg={useColorModeValue("yellow.200", "yellow.700")}>
               UX/UI Designer
             </Tag>
             <Tag size="sm" bg={useColorModeValue("green.200", "green.700")}>
