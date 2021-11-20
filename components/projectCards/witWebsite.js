@@ -48,20 +48,20 @@ import {
         <VStack align="start" justify="flex-start" spacing={1}>
           <VStack spacing={0} align="start">
             <HStack>
-              <Text fontWeight="bold" fontSize="md" noOfLines={2}>
-                UNSW WIT Website
+              <Text fontWeight="bold" fontSize={{ base: "sm", md: "md", lg: "lg" }} noOfLines={2}>
+                WIT Website
               </Text>
-              <Tag size="sm">March 2021 - Present</Tag>
-              <Tag size="sm" bg={useColorModeValue("yellow.200", "yellow.700")}>
+              <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }}>March 2021 - Present</Tag>
+              <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }} bg={useColorModeValue("yellow.200", "yellow.700")}>
                 Full Stack Developer
               </Tag>
-              <Tag size="sm" bg={useColorModeValue("green.200", "green.700")}>
-                React, Node, PostgreSQL, Express, Heroku
+              <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }} bg={useColorModeValue("green.200", "green.700")}>
+                React, Express, PostgreSQL
               </Tag>
             </HStack>
   
             <Text
-              fontSize="sm"
+              fontSize={{ base: "xs", md: "sm", lg: "md" }}
               color={useColorModeValue("neutral.1000", "neutralD.1000")}
             >
               A website that aims to inform the community about WIT. In particular, this includes information about our events, our mission and much more! 
@@ -69,11 +69,11 @@ import {
   
             <HStack pt={3}>
               <Button leftIcon={<FaLink />} colorScheme="blue" variant="solid">
-                <Link href="https://unswwit.com/#/" isExternal>
+                <Link href="https://unswwit.com/#/" isExternal fontSize={{ base: "xs", md: "sm", lg: "md" }}>
                   Website
                 </Link>
               </Button>
-              <Button leftIcon={<FaGithub />} colorScheme="blue" variant="solid">
+              <Button leftIcon={<FaGithub />} colorScheme="blue" variant="solid" fontSize={{ base: "xs", md: "sm", lg: "md" }}>
                 <Link
                   href="https://github.com/unswwit/website"
                   isExternal

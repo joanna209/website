@@ -49,20 +49,20 @@ export default function TribespotCard() {
       <VStack align="start" justify="flex-start" spacing={1}>
         <VStack spacing={0} align="start">
           <HStack>
-            <Text fontWeight="bold" fontSize="md" noOfLines={2}>
+            <Text fontWeight="bold" fontSize={{ base: "sm", md: "md", lg: "lg" }} noOfLines={2}>
               Tribespot
             </Text>
-            <Tag size="sm">June 2021 - July 2021</Tag>
-            <Tag size="sm" bg={useColorModeValue("yellow.200", "yellow.700")}>
+            <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }}>June 2021 - July 2021</Tag>
+            <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }} bg={useColorModeValue("yellow.200", "yellow.700")}>
               UX/UI Designer
             </Tag>
-            <Tag size="sm" bg={useColorModeValue("green.200", "green.700")}>
+            <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }} bg={useColorModeValue("green.200", "green.700")}>
               Figma
             </Tag>
           </HStack>
 
           <Text
-            fontSize="sm"
+            fontSize={{ base: "xs", md: "sm", lg: "md" }}
             color={useColorModeValue("neutral.1000", "neutralD.1000")}
           >
             Tribespot is a platform built by ex and current executives from the
@@ -71,13 +71,13 @@ export default function TribespotCard() {
 
           <HStack pt={3}>
             <Button leftIcon={<FaLink />} colorScheme="blue" variant="solid">
-              <Link href="https://tribespot.co/" isExternal>
+              <Link href="https://tribespot.co/" isExternal fontSize={{ base: "xs", md: "sm", lg: "md" }}>
                 Website
               </Link>
             </Button>
-            <Button leftIcon={<FaFigma />} colorScheme="blue" variant="solid">
+            <Button leftIcon={<FaFigma />} colorScheme="blue" variant="solid" fontSize={{ base: "xs", md: "sm", lg: "md" }}>
               <Link
-                href="https://www.figma.com/proto/S5wzsWY28hpPvpa7L1WqQo/ConnectMe?node-id=2%3A11&scaling=scale-down&page-id=0%3A1"
+                href="https://www.figma.com/proto/Ci8h9JaNMyWcUV7ZnHguWW/Prototype-(final)?embed_host=notion&kind=&node-id=156%3A2385&page-id=156%3A2017&scaling=scale-down&show-proto-sidebar=1&starting-point-node-id=156%3A2385"
                 isExternal
               >
                 Prototype

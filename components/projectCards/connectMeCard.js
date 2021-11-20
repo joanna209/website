@@ -27,7 +27,7 @@ export default function ConnectMeCard() {
       transition-timing-function="spring(1 100 10 10)"
       _hover={{ transform: "translateY(-4px)", shadow: "lg" }}
     >
-      {/*ConnectMe Card*/}
+      {/*Start of ConnectMe Card*/}
       <LinkBox
         rounded="lg"
         position="relative"
@@ -48,20 +48,20 @@ export default function ConnectMeCard() {
       <VStack align="start" justify="flex-start" spacing={1}>
         <VStack spacing={0} align="start">
           <HStack>
-            <Text fontWeight="bold" fontSize="md" noOfLines={2}>
+            <Text fontWeight="bold" fontSize={{ base: "sm", md: "md", lg: "lg" }} noOfLines={2}>
               ConnectMe
             </Text>
-            <Tag size="sm">August 2020 - Present</Tag>
-            <Tag size="sm" bg={useColorModeValue("yellow.200", "yellow.700")}>
+            <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }}>August 2020 - Present</Tag>
+            <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }} bg={useColorModeValue("yellow.200", "yellow.700")}>
               UX/UI Designer
             </Tag>
-            <Tag size="sm" bg={useColorModeValue("green.200", "green.700")}>
+            <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }} bg={useColorModeValue("green.200", "green.700")}>
               Photoshop
             </Tag>
           </HStack>
 
           <Text
-            fontSize="sm"
+            fontSize={{ base: "xs", md: "sm", lg: "md" }}
             color={useColorModeValue("neutral.1000", "neutralD.1000")}
           >
             An all in one platform that aims to connect UNSW students with an
@@ -73,6 +73,7 @@ export default function ConnectMeCard() {
               <Link
                 href="https://www.figma.com/proto/S5wzsWY28hpPvpa7L1WqQo/ConnectMe?node-id=2%3A11&scaling=scale-down&page-id=0%3A1"
                 isExternal
+                fontSize={{ base: "xs", md: "sm", lg: "md" }}
               >
                 Prototype
               </Link>

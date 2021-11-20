@@ -5,6 +5,16 @@ import ConnectMeCard from "../components/projectCards/connectMeCard";
 import TribespotCard from "../components/projectCards/tribespotCard";
 import WITCard from "../components/projectCards/witWebsite";
 import { FaArrowRight } from "react-icons/fa";
+import { createBreakpoints } from "@chakra-ui/theme-tools"
+
+// This is the default breakpoint
+const breakpoints = createBreakpoints({
+  sm: "30em",
+  md: "48em",
+  lg: "62em",
+  xl: "80em",
+  "2xl": "96em",
+})
 
 export default function Home() {
   return (
@@ -18,13 +28,13 @@ export default function Home() {
       <VStack spacing={12}>
         <VStack spacing={4} align="start">
           {/* Start of About Me Section */}
-          <Heading fontSize="3xl" pt={10}>
+          <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
             Hi, I'm Joanna{" "}
             <span role="img" aria-label="waving-hand">
               👋
             </span>
           </Heading>
-          <Text color={"gray.500"} maxW={"3xl"} fontSize="2xl">
+          <Text color={"gray.500"} maxW={"3xl"} fontSize={{ base: "0xl", md: "1xl", lg: "2xl" }}>
             I am a software engineer and UX/UI designer who is passionate about
             how technology can improve the quality of life for others and make
             the world a better place. Currently, I am a second year student
@@ -47,13 +57,13 @@ export default function Home() {
           {/* End of About Me Section */}
 
           {/* Start of Projects Section */}
-          <Heading fontSize="3xl" pt={10}>
+          <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
             Projects{" "}
             <span role="img" aria-label="rocket">
               🚀
             </span>
           </Heading>
-          <Text color={"gray.500"} maxW={"3xl"} fontSize="2xl">
+          <Text color={"gray.500"} maxW={"3xl"} fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }}>
             Here are some of my favourite projects I've worked on!
           </Text>
           <WITCard />
@@ -65,13 +75,13 @@ export default function Home() {
           {/* End of Projects Section */}
 
           {/* Start of Contact Section */}
-          <Heading fontSize="3xl" pt={10}>
+          <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
             Let's connect{" "}
             <span role="img" aria-label="glowing-star">
               🌟
             </span>
           </Heading>
-          <Text color={"gray.500"} maxW={"3xl"} fontSize="2xl" pb={10}>
+          <Text color={"gray.500"} maxW={"3xl"} fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pb={10}>
             Feel free to shoot me an{" "}
             <Link
               href="mailto:joanna.he3@gmail.com"
