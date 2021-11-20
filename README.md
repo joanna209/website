@@ -15,8 +15,6 @@ Before you start, make sure you have the following software installed.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
 1. Clone the repository
 
 ```
