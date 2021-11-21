@@ -1,20 +1,25 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { Button, Heading, Link, Text, VStack } from "@chakra-ui/react";
+import {
+  Button,
+  Heading,
+  Link,
+  Text,
+  VStack,
+  HStack,
+  Icon,
+  Container,
+  Flex
+} from "@chakra-ui/react";
 import ConnectMeCard from "../components/projectCards/connectMeCard";
 import TribespotCard from "../components/projectCards/tribespotCard";
 import WITCard from "../components/projectCards/witWebsite";
-import { FaArrowRight } from "react-icons/fa";
-import { createBreakpoints } from "@chakra-ui/theme-tools"
-
-// This is the default breakpoint
-const breakpoints = createBreakpoints({
-  sm: "30em",
-  md: "48em",
-  lg: "62em",
-  xl: "80em",
-  "2xl": "96em",
-})
+import { FaArrowRight, FaFigma, FaNode, FaReact } from "react-icons/fa";
+import {
+  SiExpress,
+  SiJavascript,
+  SiGit
+} from "react-icons/si";
 
 export default function Home() {
   return (
@@ -24,8 +29,8 @@ export default function Home() {
         <meta name="description" content="Joanna's Portfolio" />
         <link rel="icon" href="https://i.imgur.com/gqC0mnt.jpg" />
       </Head>
-
-      <VStack spacing={12}>
+      
+      <VStack spacing={12} m={2}>
         <VStack spacing={4} align="start">
           {/* Start of About Me Section */}
           <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
@@ -34,7 +39,12 @@ export default function Home() {
               👋
             </span>
           </Heading>
-          <Text color={"gray.500"} maxW={"3xl"} fontSize={{ base: "0xl", md: "1xl", lg: "2xl" }}>
+
+          <Text
+            color={"gray.500"}
+            maxW={("1xl", "lg", "3xl")}
+            fontSize={{ base: "0xl", md: "1xl", lg: "2xl" }}
+          >
             I am a software engineer and UX/UI designer who is passionate about
             how technology can improve the quality of life for others and make
             the world a better place. Currently, I am a second year student
@@ -56,6 +66,25 @@ export default function Home() {
           </Text>
           {/* End of About Me Section */}
 
+          {/* Start of Skills Section */}
+          <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
+            Skills{" "}
+            <span role="img" aria-label="wrench">
+              🔧
+            </span>
+          </Heading>
+          <Container maxW="container.lg">
+          <HStack spacing={10}>
+            <Icon as={SiExpress} w={14} h={14}/>
+            <Icon as={FaFigma} w={14} h={14}  />
+            <Icon as={SiGit} w={14} h={14}  />
+            <Icon as ={SiJavascript} w={14} h={14}  />
+            <Icon as ={FaNode} w={14} h={14}  />
+            <Icon as={FaReact} w={14} h={14}  />
+          </HStack>
+          </Container>
+          {/* End of Skills Section */}
+
           {/* Start of Projects Section */}
           <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
             Projects{" "}
@@ -63,7 +92,11 @@ export default function Home() {
               🚀
             </span>
           </Heading>
-          <Text color={"gray.500"} maxW={"3xl"} fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }}>
+          <Text
+            color={"gray.500"}
+            maxW={"3xl"}
+            fontSize={{ base: "0xl", md: "1xl", lg: "2xl" }}
+          >
             Here are some of my favourite projects I've worked on!
           </Text>
           <WITCard />
@@ -81,7 +114,12 @@ export default function Home() {
               🌟
             </span>
           </Heading>
-          <Text color={"gray.500"} maxW={"3xl"} fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pb={10}>
+          <Text
+            color={"gray.500"}
+            maxW={"3xl"}
+            fontSize={{ base: "0xl", md: "1xl", lg: "2xl" }}
+            pb={10}
+          >
             Feel free to shoot me an{" "}
             <Link
               href="mailto:joanna.he3@gmail.com"
