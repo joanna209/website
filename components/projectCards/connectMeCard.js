@@ -48,14 +48,26 @@ export default function ConnectMeCard() {
       <VStack align="start" justify="flex-start" spacing={1}>
         <VStack spacing={0} align="start">
           <HStack>
-            <Text fontWeight="bold" fontSize={{ base: "sm", md: "md", lg: "lg" }} noOfLines={2}>
+            <Text
+              fontWeight="bold"
+              fontSize={{ base: "sm", md: "md", lg: "lg" }}
+              noOfLines={2}
+            >
               ConnectMe
             </Text>
-            <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }}>August 2020 - Present</Tag>
-            <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }} bg={useColorModeValue("yellow.200", "yellow.700")}>
+            <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }}>
+              August 2020 - Present
+            </Tag>
+            <Tag
+              fontSize={{ base: "xs", md: "sm", lg: "md" }}
+              bg={useColorModeValue("yellow.200", "yellow.700")}
+            >
               UX/UI Designer
             </Tag>
-            <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }} bg={useColorModeValue("green.200", "green.700")}>
+            <Tag
+              fontSize={{ base: "xs", md: "sm", lg: "md" }}
+              bg={useColorModeValue("green.200", "green.700")}
+            >
               Photoshop
             </Tag>
           </HStack>

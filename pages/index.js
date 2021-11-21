@@ -9,17 +9,13 @@ import {
   HStack,
   Icon,
   Container,
-  Flex
+  Flex,
 } from "@chakra-ui/react";
 import ConnectMeCard from "../components/projectCards/connectMeCard";
 import TribespotCard from "../components/projectCards/tribespotCard";
 import WITCard from "../components/projectCards/witWebsite";
 import { FaArrowRight, FaFigma, FaNode, FaReact } from "react-icons/fa";
-import {
-  SiExpress,
-  SiJavascript,
-  SiGit
-} from "react-icons/si";
+import { SiExpress, SiJavascript, SiGit } from "react-icons/si";
 
 export default function Home() {
   return (
@@ -29,7 +25,7 @@ export default function Home() {
         <meta name="description" content="Joanna's Portfolio" />
         <link rel="icon" href="https://i.imgur.com/gqC0mnt.jpg" />
       </Head>
-      
+
       <VStack spacing={12} m={2}>
         <VStack spacing={4} align="start">
           {/* Start of About Me Section */}
@@ -74,14 +70,14 @@ export default function Home() {
             </span>
           </Heading>
           <Container maxW="container.lg">
-          <HStack spacing={10}>
-            <Icon as={SiExpress} w={14} h={14}/>
-            <Icon as={FaFigma} w={14} h={14}  />
-            <Icon as={SiGit} w={14} h={14}  />
-            <Icon as ={SiJavascript} w={14} h={14}  />
-            <Icon as ={FaNode} w={14} h={14}  />
-            <Icon as={FaReact} w={14} h={14}  />
-          </HStack>
+            <HStack spacing={10}>
+              <Icon as={SiExpress} w={14} h={14} />
+              <Icon as={FaFigma} w={14} h={14} />
+              <Icon as={SiGit} w={14} h={14} />
+              <Icon as={SiJavascript} w={14} h={14} />
+              <Icon as={FaNode} w={14} h={14} />
+              <Icon as={FaReact} w={14} h={14} />
+            </HStack>
           </Container>
           {/* End of Skills Section */}
 
