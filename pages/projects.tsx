@@ -1,11 +1,11 @@
 import Head from "next/head";
 import styles from "../styles/Projects.module.css"
 import { Heading, Text, VStack, Tooltip } from "@chakra-ui/react";
-import ConnectMeCard from "../components/projectCards/connectMeCard";
-import TribespotCard from "../components/projectCards/tribespotCard";
-import WITCard from "../components/projectCards/witWebsite";
-import PersonalWebsiteCard from "../components/projectCards/personalWebsite";
-import HeroXCard from "../components/projectCards/heroZCard";
+import ConnectMeCard from "../components/project cards/connectMeCard";
+import TribespotCard from "../components/project cards/tribespotCard";
+import WITCard from "../components/project cards/witWebsite";
+import PersonalWebsiteCard from "../components/project cards/personalWebsite";
+import HeroXCard from "../components/project cards/heroZCard";
 
 export default function Projects() {
   return (
