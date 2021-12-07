@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from '../styles/Home.module.css';
 import {
   Button,
   Heading,
@@ -10,10 +10,10 @@ import {
   Icon,
   Container,
   Flex,
-} from "@chakra-ui/react";
-import ConnectMeCard from "../components/projectCards/connectMeCard";
+} from '@chakra-ui/react';
+import ConnectMeCard from '../components/projectCards/connectMeCard';
 import TribespotCard from "../components/projectCards/tribespotCard";
-import WITCard from "../components/projectCards/witWebsite";
+import WITCard from '../components/projectCards/witWebsite';
 import { FaArrowRight, FaFigma, FaNode, FaReact } from "react-icons/fa";
 import { SiExpress, SiJavascript, SiGit } from "react-icons/si";
 
@@ -38,7 +38,7 @@ export default function Home() {
 
           <Text
             color={"gray.500"}
-            maxW={("1xl", "lg", "3xl")}
+            maxW={("3xl")}
             fontSize={{ base: "0xl", md: "1xl", lg: "2xl" }}
           >
             I am a software engineer and UX/UI designer who is passionate about

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Projects.module.css";
+import styles from "../styles/Projects.module.css"
 import { Heading, Text, VStack, Tooltip } from "@chakra-ui/react";
 import ConnectMeCard from "../components/projectCards/connectMeCard";
 import TribespotCard from "../components/projectCards/tribespotCard";
