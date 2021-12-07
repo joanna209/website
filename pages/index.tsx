@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from '../styles/Home.module.css';
 import {
   Button,
   Heading,
@@ -10,7 +10,7 @@ import {
   Icon,
   Container,
   Flex,
-} from "@chakra-ui/react";
+} from '@chakra-ui/react';
 import ConnectMeCard from "../components/projectCards/connectMeCard";
 import TribespotCard from "../components/projectCards/tribespotCard";
 import WITCard from "../components/projectCards/witWebsite";
@@ -30,7 +30,7 @@ export default function Home() {
         <VStack spacing={4} align="start">
           {/* Start of About Me Section */}
           <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
-            Hi, I'm Joanna{" "}
+            Hi, I&apos;m Joanna{" "}
             <span role="img" aria-label="waving-hand">
               👋
             </span>
@@ -38,7 +38,7 @@ export default function Home() {
 
           <Text
             color={"gray.500"}
-            maxW={("1xl", "lg", "3xl")}
+            maxW={("3xl")}
             fontSize={{ base: "0xl", md: "1xl", lg: "2xl" }}
           >
             I am a software engineer and UX/UI designer who is passionate about
@@ -93,7 +93,7 @@ export default function Home() {
             maxW={"3xl"}
             fontSize={{ base: "0xl", md: "1xl", lg: "2xl" }}
           >
-            Here are some of my favourite projects I've worked on!
+            Here are some of my favourite projects I&apos;ve worked on!
           </Text>
           <WITCard />
           <TribespotCard />
@@ -105,7 +105,7 @@ export default function Home() {
 
           {/* Start of Contact Section */}
           <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
-            Let's connect{" "}
+            Let&apos;s connect{" "}
             <span role="img" aria-label="glowing-star">
               🌟
             </span>
