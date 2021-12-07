@@ -9,14 +9,12 @@ import {
   useColorModeValue,
   Tooltip,
   useColorMode,
-  useDisclosure,
-  Container,
+  Container
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
-  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
       <Container as={Stack} maxW={"4xl"}>

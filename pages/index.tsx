@@ -11,9 +11,9 @@ import {
   Container,
   Flex,
 } from '@chakra-ui/react';
-import ConnectMeCard from "../components/projectCards/connectMeCard";
-import TribespotCard from "../components/projectCards/tribespotCard";
-import WITCard from "../components/projectCards/witWebsite";
+import ConnectMeCard from "../components/project cards/connectMeCard";
+import TribespotCard from "../components/project cards/tribespotCard";
+import WITCard from "../components/project cards/witWebsite";
 import { FaArrowRight, FaFigma, FaNode, FaReact } from "react-icons/fa";
 import { SiExpress, SiJavascript, SiGit } from "react-icons/si";
 
@@ -61,25 +61,6 @@ export default function Home() {
             !
           </Text>
           {/* End of About Me Section */}
-
-          {/* Start of Skills Section */}
-          {/* <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
-            Skills{" "}
-            <span role="img" aria-label="wrench">
-              🔧
-            </span>
-          </Heading>
-          <Container maxW="container.lg">
-            <HStack spacing={10}>
-              <Icon as={SiExpress} w={14} h={14} />
-              <Icon as={FaFigma} w={14} h={14} />
-              <Icon as={SiGit} w={14} h={14} />
-              <Icon as={SiJavascript} w={14} h={14} />
-              <Icon as={FaNode} w={14} h={14} />
-              <Icon as={FaReact} w={14} h={14} />
-            </HStack>
-          </Container> */}
-          {/* End of Skills Section */}
 
           {/* Start of Projects Section */}
           <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
