@@ -11,9 +11,9 @@ import {
   Container,
   Flex,
 } from '@chakra-ui/react';
-import ConnectMeCard from '../components/projectCards/connectMeCard';
+import ConnectMeCard from "../components/projectCards/connectMeCard";
 import TribespotCard from "../components/projectCards/tribespotCard";
-import WITCard from '../components/projectCards/witWebsite';
+import WITCard from "../components/projectCards/witWebsite";
 import { FaArrowRight, FaFigma, FaNode, FaReact } from "react-icons/fa";
 import { SiExpress, SiJavascript, SiGit } from "react-icons/si";
 
@@ -30,7 +30,7 @@ export default function Home() {
         <VStack spacing={4} align="start">
           {/* Start of About Me Section */}
           <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
-            Hi, I'm Joanna{" "}
+            Hi, I&apos;m Joanna{" "}
             <span role="img" aria-label="waving-hand">
               👋
             </span>
@@ -93,7 +93,7 @@ export default function Home() {
             maxW={"3xl"}
             fontSize={{ base: "0xl", md: "1xl", lg: "2xl" }}
           >
-            Here are some of my favourite projects I've worked on!
+            Here are some of my favourite projects I&apos;ve worked on!
           </Text>
           <WITCard />
           <TribespotCard />
@@ -105,7 +105,7 @@ export default function Home() {
 
           {/* Start of Contact Section */}
           <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
-            Let's connect{" "}
+            Let&apos;s connect{" "}
             <span role="img" aria-label="glowing-star">
               🌟
             </span>

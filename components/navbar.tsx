@@ -6,10 +6,7 @@ import {
   Button,
   Avatar,
   Link,
-  Center,
   useColorModeValue,
-  toggleColorMode,
-  colorMode,
   Tooltip,
   useColorMode,
   useDisclosure,
@@ -26,7 +23,10 @@ export default function Navbar() {
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <Box>
             <Link href="/">
-              <IconButton aria-label='dark mode button' bg={useColorModeValue("gray.100", "gray.900")}>
+              <IconButton
+                aria-label="dark mode button"
+                bg={useColorModeValue("gray.100", "gray.900")}
+              >
                 <Avatar size={"sm"} src={"https://i.imgur.com/gqC0mnt.jpg"} />
               </IconButton>
             </Link>
