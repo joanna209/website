@@ -30,7 +30,7 @@ export default function Home() {
         <VStack spacing={4} align="start">
           {/* Start of About Me Section */}
           <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
-            Hello, I&apos;m Joanna{" "}
+            Hi, I&apos;m Joanna{" "}
             <span role="img" aria-label="waving-hand">
               👋
             </span>
