@@ -63,7 +63,7 @@ export default function Home() {
           {/* End of About Me Section */}
 
           {/* Start of Skills Section */}
-          <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
+          {/* <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
             Skills{" "}
             <span role="img" aria-label="wrench">
               🔧
@@ -78,7 +78,7 @@ export default function Home() {
               <Icon as={FaNode} w={14} h={14} />
               <Icon as={FaReact} w={14} h={14} />
             </HStack>
-          </Container>
+          </Container> */}
           {/* End of Skills Section */}
 
           {/* Start of Projects Section */}
