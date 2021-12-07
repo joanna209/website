@@ -25,21 +25,32 @@ export default function Projects() {
               🚀
             </span>
           </Heading>
-          <Text color={"gray.500"} fontSize={{ base: "0xl", md: "1xl", lg: "2xl" }}>
+          <Text
+            color={"gray.500"}
+            fontSize={{ base: "0xl", md: "1xl", lg: "2xl" }}
+          >
             Here are all of my projects and other things I have worked on
           </Text>
-          <Text maxW={"3xl"} fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={3}>
+          <Text
+            maxW={"3xl"}
+            fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }}
+            pt={3}
+          >
             Technical Projects
           </Text>
           <PersonalWebsiteCard />
           <WITCard />
-          <Text maxW={"3xl"} fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={3}>
+          <Text
+            maxW={"3xl"}
+            fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }}
+            pt={3}
+          >
             UX/UI Design
           </Text>
           <TribespotCard />
           <HeroXCard />
           <ConnectMeCard />
-          <Heading pb={10}>{" "}</Heading>
+          <Heading pb={10}> </Heading>
           {/* End of Projects Section */}
         </VStack>
       </VStack>

@@ -1,6 +1,6 @@
 # joannahe.me
 
-This repository houses the codebase of my portfolio website. 
+This repository houses the codebase of my portfolio website.
 
 ## Getting Started
 
@@ -10,8 +10,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 Before you start, make sure you have the following software installed.
 
-* Git or [Github Desktop](https://desktop.github.com/)
-* [Node.js](https://nodejs.org/en/download/package-manager/) and [npm](https://www.npmjs.com/) (usually bundled with Node.js) 
+- Git or [Github Desktop](https://desktop.github.com/)
+- [Node.js](https://nodejs.org/en/download/package-manager/) and [npm](https://www.npmjs.com/) (usually bundled with Node.js)
 
 ### Installing
 
@@ -21,7 +21,7 @@ Before you start, make sure you have the following software installed.
 git clone https://github.com/joanna209/website.git
 ```
 
-2. Install npm packages 
+2. Install npm packages
 
 ```
 npm install
@@ -33,7 +33,7 @@ npm install
 npm run dev
 ```
 
-4. Access the server on 
+4. Access the server on
 
 ```
 localhost:3000
@@ -41,17 +41,17 @@ localhost:3000
 
 ## Deployment
 
-To deploy, push changes to the master branch for changes on the [website](https://joannahe.me).
+To deploy, push changes to the master branch for changes to be reflected on the [website](https://joannahe.me).
 
 ## Built With
 
-* [Next.js](https://nextjs.org/) - The web framework used
-* [Chakra UI](https://chakra-ui.com/) - Component library
+- [Next.js](https://nextjs.org/) - The web framework used
+- [Chakra UI](https://chakra-ui.com/) - Component library
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details. 
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
 
-Thank you to [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) for the README template. 
+Thank you to [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) for the README template.
