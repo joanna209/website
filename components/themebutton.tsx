@@ -8,7 +8,7 @@ import {
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import useSound from "use-sound";
 
-export default function ThemeToggle() {
+export default function ThemeButton() {
   const { colorMode, toggleColorMode } = useColorMode();
 
   const [play] = useSound("/lightswitch.mp3", {

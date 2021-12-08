@@ -8,7 +8,7 @@ import {
   useColorModeValue,
   Container,
 } from "@chakra-ui/react";
-import ThemeToggle from "./themeButton";
+import ThemeButton from "./themeButton";
 
 export default function Navbar() {
   return (
@@ -28,7 +28,7 @@ export default function Navbar() {
 
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={7}>
-              <ThemeToggle/>
+              <ThemeButton/>
             </Stack>
           </Flex>
         </Flex>
