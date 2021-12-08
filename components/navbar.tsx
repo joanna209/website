@@ -3,18 +3,14 @@ import {
   Flex,
   Stack,
   IconButton,
-  Button,
   Avatar,
   Link,
   useColorModeValue,
-  Tooltip,
-  useColorMode,
-  Container
+  Container,
 } from "@chakra-ui/react";
-import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import ThemeToggle from "./themebutton";
 
 export default function Navbar() {
-  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
       <Container as={Stack} maxW={"4xl"}>
@@ -22,7 +18,7 @@ export default function Navbar() {
           <Box>
             <Link href="/">
               <IconButton
-                aria-label="dark mode button"
+                aria-label="home"
                 bg={useColorModeValue("gray.100", "gray.900")}
               >
                 <Avatar size={"sm"} src={"https://i.imgur.com/gqC0mnt.jpg"} />
@@ -32,14 +28,7 @@ export default function Navbar() {
 
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={7}>
-              <Tooltip label="Dark Mode" aria-label="Dark mode tooltip">
-                <Button
-                  onClick={toggleColorMode}
-                  bg={useColorModeValue("gray.100", "gray.900")}
-                >
-                  {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-                </Button>
-              </Tooltip>
+              <ThemeToggle/>
             </Stack>
           </Flex>
         </Flex>
