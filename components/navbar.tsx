@@ -8,7 +8,7 @@ import {
   useColorModeValue,
   Container,
 } from "@chakra-ui/react";
-import ThemeToggle from "./themebutton";
+import ThemeToggle from "./themeButton";
 
 export default function Navbar() {
   return (

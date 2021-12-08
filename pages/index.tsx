@@ -5,17 +5,13 @@ import {
   Heading,
   Link,
   Text,
-  VStack,
-  HStack,
-  Icon,
-  Container,
-  Flex,
+  VStack
 } from '@chakra-ui/react';
-import ConnectMeCard from "../components/project cards/connectMeCard";
-import TribespotCard from "../components/project cards/tribespotCard";
-import WITCard from "../components/project cards/witWebsite";
-import { FaArrowRight, FaFigma, FaNode, FaReact } from "react-icons/fa";
-import { SiExpress, SiJavascript, SiGit } from "react-icons/si";
+import ConnectMeCard from "../components/projectCards/connectMeCard";
+import TribespotCard from "../components/projectCards/tribespotCard";
+import WITCard from "../components/projectCards/witWebsite";
+import { FaArrowRight } from "react-icons/fa";
+import PageTransition from "../components/pageTransition";
 
 export default function Home() {
   return (
@@ -26,6 +22,7 @@ export default function Home() {
         <link rel="icon" href="https://i.imgur.com/gqC0mnt.jpg" />
       </Head>
 
+      <PageTransition>
       <VStack spacing={12} m={2}>
         <VStack spacing={4} align="start">
           {/* Start of About Me Section */}
@@ -118,6 +115,7 @@ export default function Home() {
           {/* End of Contact Section */}
         </VStack>
       </VStack>
+      </PageTransition>
     </div>
   );
 }

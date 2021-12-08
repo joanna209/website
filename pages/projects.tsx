@@ -1,11 +1,12 @@
 import Head from "next/head";
 import styles from "../styles/Projects.module.css"
-import { Heading, Text, VStack, Tooltip } from "@chakra-ui/react";
-import ConnectMeCard from "../components/project cards/connectMeCard";
-import TribespotCard from "../components/project cards/tribespotCard";
-import WITCard from "../components/project cards/witWebsite";
-import PersonalWebsiteCard from "../components/project cards/personalWebsite";
-import HeroXCard from "../components/project cards/heroZCard";
+import { Heading, Text, VStack } from "@chakra-ui/react";
+import ConnectMeCard from "../components/projectCards/connectMeCard";
+import TribespotCard from "../components/projectCards/tribespotCard";
+import WITCard from "../components/projectCards/witWebsite";
+import PersonalWebsiteCard from "../components/projectCards/personalWebsite";
+import HeroXCard from "../components/projectCards/heroZCard";
+import PageTransition from "../components/pageTransition";
 
 export default function Projects() {
   return (
@@ -16,6 +17,7 @@ export default function Projects() {
         <link rel="icon" href="https://i.imgur.com/gqC0mnt.jpg" />
       </Head>
 
+      <PageTransition>
       <VStack spacing={12}>
         <VStack spacing={4} align="start">
           {/* Start of Projects Section */}
@@ -54,6 +56,7 @@ export default function Projects() {
           {/* End of Projects Section */}
         </VStack>
       </VStack>
+      </PageTransition>
     </div>
   );
 }

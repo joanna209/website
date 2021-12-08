@@ -8,9 +8,11 @@ import {
   Container,
   Button,
 } from "@chakra-ui/react";
+import PageTransition from "../components/pageTransition";
 
 export default function NotFound() {
   return (
+    <PageTransition>
     <Container w="full" mx="auto" maxW="3xl" py={{ base: "190", md: "200" }}>
       <Center>
         <NextSeo
@@ -32,5 +34,6 @@ export default function NotFound() {
         </VStack>
       </Center>
     </Container>
+    </PageTransition>
   );
 }
