@@ -5,11 +5,7 @@ import {
   Heading,
   Link,
   Text,
-  VStack,
-  HStack,
-  Icon,
-  Container,
-  Flex,
+  VStack
 } from '@chakra-ui/react';
 import ConnectMeCard from "../components/projectCards/connectMeCard";
 import TribespotCard from "../components/projectCards/tribespotCard";
