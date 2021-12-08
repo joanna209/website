@@ -6,6 +6,7 @@ import TribespotCard from "../components/projectCards/tribespotCard";
 import WITCard from "../components/projectCards/witWebsite";
 import PersonalWebsiteCard from "../components/projectCards/personalWebsite";
 import HeroXCard from "../components/projectCards/heroZCard";
+import PageTransition from "../components/pageTransition";
 
 export default function Projects() {
   return (
@@ -16,6 +17,7 @@ export default function Projects() {
         <link rel="icon" href="https://i.imgur.com/gqC0mnt.jpg" />
       </Head>
 
+      <PageTransition>
       <VStack spacing={12}>
         <VStack spacing={4} align="start">
           {/* Start of Projects Section */}
@@ -54,6 +56,7 @@ export default function Projects() {
           {/* End of Projects Section */}
         </VStack>
       </VStack>
+      </PageTransition>
     </div>
   );
 }
