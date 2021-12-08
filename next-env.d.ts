@@ -6,4 +6,4 @@
 // see https://nextjs.org/docs/basic-features/typescript for more information.
 
 // declaring css file 
-declare module '*.css';
+// declare module '*.css';
