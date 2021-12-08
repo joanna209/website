@@ -5,17 +5,13 @@ import {
   Heading,
   Link,
   Text,
-  VStack,
-  HStack,
-  Icon,
-  Container,
-  Flex,
+  VStack
 } from '@chakra-ui/react';
 import ConnectMeCard from "../components/projectCards/connectMeCard";
 import TribespotCard from "../components/projectCards/tribespotCard";
 import WITCard from "../components/projectCards/witWebsite";
-import { FaArrowRight, FaFigma, FaNode, FaReact } from "react-icons/fa";
-import { SiExpress, SiJavascript, SiGit } from "react-icons/si";
+import { FaArrowRight } from "react-icons/fa";
+import PageTransition from "../components/pageTransition";
 
 export default function Home() {
   return (
@@ -27,6 +23,7 @@ export default function Home() {
       </Head>
 
       <VStack spacing={12} m={2}>
+      <PageTransition>
         <VStack spacing={4} align="start">
           {/* Start of About Me Section */}
           <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
@@ -61,25 +58,6 @@ export default function Home() {
             !
           </Text>
           {/* End of About Me Section */}
-
-          {/* Start of Skills Section */}
-          {/* <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
-            Skills{" "}
-            <span role="img" aria-label="wrench">
-              🔧
-            </span>
-          </Heading>
-          <Container maxW="container.lg">
-            <HStack spacing={10}>
-              <Icon as={SiExpress} w={14} h={14} />
-              <Icon as={FaFigma} w={14} h={14} />
-              <Icon as={SiGit} w={14} h={14} />
-              <Icon as={SiJavascript} w={14} h={14} />
-              <Icon as={FaNode} w={14} h={14} />
-              <Icon as={FaReact} w={14} h={14} />
-            </HStack>
-          </Container> */}
-          {/* End of Skills Section */}
 
           {/* Start of Projects Section */}
           <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
@@ -136,6 +114,7 @@ export default function Home() {
           </Text>
           {/* End of Contact Section */}
         </VStack>
+        </PageTransition>
       </VStack>
     </div>
   );

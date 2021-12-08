@@ -8,6 +8,7 @@ import {
   Container,
   Button,
 } from "@chakra-ui/react";
+import PageTransition from "../components/pageTransition";
 
 export default function NotFound() {
   return (
@@ -22,6 +23,7 @@ export default function NotFound() {
           }}
         />
         <VStack>
+        <PageTransition>
           <Heading size="3xl">404</Heading>
           <Text mb={8} pb={4}>
             Page not found
@@ -29,6 +31,7 @@ export default function NotFound() {
           <Button colorScheme="blue" variant="solid">
             <Link href="/">Return home</Link>
           </Button>
+          </PageTransition>
         </VStack>
       </Center>
     </Container>
