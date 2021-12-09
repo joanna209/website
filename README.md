@@ -21,23 +21,13 @@ Before you start, make sure you have the following software installed.
 git clone https://github.com/joanna209/website.git
 ```
 
-2. Install npm packages
+2. Install npm packages and run with  
 
 ```
 npm install
+npm run dev 
 ```
-
-3. Start the server
-
-```
-npm run dev
-```
-
-4. Access the server on
-
-```
-localhost:3000
-```
+The local server should be now running on port 3000. 
 
 ## Deployment
 
