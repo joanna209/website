@@ -50,28 +50,21 @@ export default function ConnectMeCard() {
           <HStack>
             <Text
               fontWeight="bold"
-              fontSize={{ base: "sm", md: "md", lg: "lg" }}
+              fontSize={"xl"}
               noOfLines={2}
             >
               ConnectMe
             </Text>
-            <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }}>
-              August 2020 - Present
-            </Tag>
+          </HStack>
+
+          <HStack pb={3}>
             <Tag
               fontSize={{ base: "xs", md: "sm", lg: "md" }}
-              bg={useColorModeValue("yellow.200", "yellow.700")}
-            >
-              UX/UI Designer
-            </Tag>
-            <Tag
-              fontSize={{ base: "xs", md: "sm", lg: "md" }}
-              bg={useColorModeValue("green.200", "green.700")}
+              bg={useColorModeValue("gray.200", "gray.700")}
             >
               Photoshop
             </Tag>
           </HStack>
-
           <Text
             fontSize={{ base: "xs", md: "sm", lg: "md" }}
             color={useColorModeValue("neutral.1000", "neutralD.1000")}

@@ -24,6 +24,7 @@ git clone https://github.com/joanna209/website.git
 2. Install npm packages and run with  
 
 ```
+cd website 
 npm install
 npm run dev 
 ```

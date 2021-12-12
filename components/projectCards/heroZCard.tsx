@@ -50,23 +50,17 @@ export default function HeroZCard() {
           <HStack>
             <Text
               fontWeight="bold"
-              fontSize={{ base: "sm", md: "md", lg: "lg" }}
+              fontSize={"xl"}
               noOfLines={2}
             >
               HeroZ
             </Text>
-            <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }}>
-              March 2021 - April 2021
-            </Tag>
+          </HStack>
+
+          <HStack pb={3}>
             <Tag
               fontSize={{ base: "xs", md: "sm", lg: "md" }}
-              bg={useColorModeValue("yellow.200", "yellow.700")}
-            >
-              UX/UI Designer
-            </Tag>
-            <Tag
-              fontSize={{ base: "xs", md: "sm", lg: "md" }}
-              bg={useColorModeValue("green.200", "green.700")}
+              bg={useColorModeValue("gray.200", "gray.700")}
             >
               Figma
             </Tag>

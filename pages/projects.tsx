@@ -14,14 +14,14 @@ export default function Projects() {
       <Head>
         <title>Joanna He</title>
         <meta name="description" content="Joanna's Portfolio" />
-        <link rel="icon" href="https://i.imgur.com/gqC0mnt.jpg" />
+        <link rel="preload" href={"https://i.imgur.com/gqC0mnt.jpg"} as="image" />
       </Head>
 
       <PageTransition>
       <VStack spacing={12}>
         <VStack spacing={4} align="start">
           {/* Start of Projects Section */}
-          <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
+          <Heading fontSize={"3xl"} pt={10}>
             Projects{" "}
             <span role="img" aria-label="rocket">
               🚀
@@ -35,7 +35,7 @@ export default function Projects() {
           </Text>
           <Text
             maxW={"3xl"}
-            fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }}
+            fontSize={"2xl"}
             pt={3}
           >
             Technical Projects
@@ -44,7 +44,7 @@ export default function Projects() {
           <WITCard />
           <Text
             maxW={"3xl"}
-            fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }}
+            fontSize={"2xl"}
             pt={3}
           >
             UX/UI Design

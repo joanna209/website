@@ -25,7 +25,7 @@ export default function Navbar() {
                 aria-label="dark mode button"
                 bg={useColorModeValue("gray.100", "gray.900")}
               >
-                <Avatar size={"sm"} src={"https://i.imgur.com/gqC0mnt.jpg"} />
+                <Avatar size={"sm"} width={"30px"} height={"30px"}src={"https://i.imgur.com/gqC0mnt.jpg"} />
               </IconButton>
             </Link>
           </Box>
