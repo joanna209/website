@@ -48,27 +48,29 @@ export default function PersonalWebsiteCard() {
       <VStack align="start" justify="flex-start" spacing={1}>
         <VStack spacing={0} align="start">
           <HStack>
-            <Text
-              fontWeight="bold"
-              fontSize={{ base: "sm", md: "md", lg: "lg" }}
-              noOfLines={2}
-            >
+            <Text fontWeight="bold" fontSize={"xl"} noOfLines={2}>
               Portfolio Website
             </Text>
-            <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }}>
-              November 2021 - Present
+          </HStack>
+
+          <HStack pb={3}>
+            <Tag
+              fontSize={{ base: "xs", md: "sm", lg: "md" }}
+              bg={useColorModeValue("gray.200", "gray.700")}
+            >
+              Typescript
             </Tag>
             <Tag
               fontSize={{ base: "xs", md: "sm", lg: "md" }}
-              bg={useColorModeValue("yellow.200", "yellow.700")}
+              bg={useColorModeValue("gray.200", "gray.700")}
             >
-              Full Stack Developer
+              Next.js
             </Tag>
             <Tag
               fontSize={{ base: "xs", md: "sm", lg: "md" }}
-              bg={useColorModeValue("green.200", "green.700")}
+              bg={useColorModeValue("gray.200", "gray.700")}
             >
-              Next.js, ChakraUI
+              ChakraUI
             </Tag>
           </HStack>
 

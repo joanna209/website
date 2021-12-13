@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start",
     "deploy": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages",
-    "lint": "next lint"
+    "lint": "next lint",
+    "analyze": "cross-env ANALYZE=true next build"
   },
   "dependencies": {
     "@babel/core": "^7.16.0",
@@ -14,6 +15,9 @@
     "@chakra-ui/react": "^1.7.2",
     "@emotion/react": "^11.7.0",
     "@emotion/styled": "^11.6.0",
+    "@next/bundle-analyzer": "^12.0.7",
+    "cross-env": "^7.0.3",
+    "duplicate-package-checker-webpack-plugin": "^3.0.0",
     "eslint": "^8.4.1",
     "framer-motion": "^5.4.4",
     "heroicons-react": "^1.4.1",
@@ -28,7 +32,8 @@
   "devDependencies": {
     "babel-plugin-transform-define": "^2.0.1",
     "eslint-config-next": "12.0.7",
-    "typescript": "^4.5.2"
+    "typescript": "^4.5.2",
+    "webpack-bundle-analyzer": "^4.5.0"
   },
   "optionalDependencies": {
     "fsevents": "^2.3.2"

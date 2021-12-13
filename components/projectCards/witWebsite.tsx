@@ -50,26 +50,42 @@ export default function WITCard() {
           <HStack>
             <Text
               fontWeight="bold"
-              fontSize={{ base: "sm", md: "md", lg: "lg" }}
-              noOfLines={2}
+              fontSize={"xl"}
             >
               WIT Website
             </Text>
-            <Tag fontSize={{ base: "xs", md: "sm", lg: "md" }}>
-              March 2021 - Present
-            </Tag>
-            <Tag
-              fontSize={{ base: "xs", md: "sm", lg: "md" }}
-              bg={useColorModeValue("yellow.200", "yellow.700")}
-            >
-              Full Stack Developer
-            </Tag>
-            <Tag
-              fontSize={{ base: "xs", md: "sm", lg: "md" }}
-              bg={useColorModeValue("green.200", "green.700")}
-            >
-              React, Express, PostgreSQL
-            </Tag>
+          </HStack>
+          <HStack pb={3}>
+          <Tag
+            fontSize={{ base: "xs", md: "sm", lg: "md" }}
+            bg={useColorModeValue("gray.200", "gray.700")}
+          >
+            JavaScript
+          </Tag>
+          <Tag
+            fontSize={{ base: "xs", md: "sm", lg: "md" }}
+            bg={useColorModeValue("gray.200", "gray.700")}
+          >
+            React
+          </Tag>
+          <Tag
+            fontSize={{ base: "xs", md: "sm", lg: "md" }}
+            bg={useColorModeValue("gray.200", "gray.700")}
+          >
+            Express
+          </Tag>
+          <Tag
+            fontSize={{ base: "xs", md: "sm", lg: "md" }}
+            bg={useColorModeValue("gray.200", "gray.700")}
+          >
+            PostgreSQL
+          </Tag>
+          <Tag
+            fontSize={{ base: "xs", md: "sm", lg: "md" }}
+            bg={useColorModeValue("gray.200", "gray.700")}
+          >
+            Node
+          </Tag>
           </HStack>
 
           <Text
@@ -97,7 +113,7 @@ export default function WITCard() {
               variant="solid"
               fontSize={{ base: "xs", md: "sm", lg: "md" }}
             >
-              <Link href="https://github.com/unswwit/website" isExternal>
+              <Link href="https://github.com/unswwit/website/commits?author=joanna209" isExternal>
                 Github
               </Link>
             </Button>

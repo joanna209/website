@@ -15,11 +15,11 @@ export default function NotFound() {
     <Container w="full" mx="auto" maxW="3xl" py={{ base: "190", md: "200" }}>
       <Center>
         <NextSeo
-          title="404 – Joanna He"
+          title="Joanna He"
           canonical="https://joannahe.me/404"
           openGraph={{
             url: "https://joannahe.me/404",
-            title: "404 – Joanna He",
+            title: "Joanna He"
           }}
         />
         <VStack>
