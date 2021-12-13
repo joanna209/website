@@ -98,7 +98,7 @@ export default function WITCard() {
           </Text>
 
           <HStack pt={3}>
-            <Button leftIcon={<FaLink />} colorScheme="blue" variant="solid">
+            <Button leftIcon={<FaLink />} backgroundColor={useColorModeValue("gray.100", "gray.700")} color={useColorModeValue("blue.600", "blue.300")} variant="solid">
               <Link
                 href="https://unswwit.com/#/"
                 isExternal
@@ -109,7 +109,7 @@ export default function WITCard() {
             </Button>
             <Button
               leftIcon={<FaGithub />}
-              colorScheme="blue"
+              backgroundColor={useColorModeValue("gray.100", "gray.700")} color={useColorModeValue("blue.600", "blue.300")}
               variant="solid"
               fontSize={{ base: "xs", md: "sm", lg: "md" }}
             >
