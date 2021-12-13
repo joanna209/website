@@ -76,7 +76,7 @@ export default function TribespotCard() {
           </Text>
 
           <HStack pt={3}>
-            <Button leftIcon={<FaLink />} colorScheme="blue" variant="solid">
+            <Button leftIcon={<FaLink />} backgroundColor={useColorModeValue("gray.100", "gray.700")} color={useColorModeValue("blue.600", "blue.300")} variant="solid">
               <Link
                 href="https://tribespot.co/"
                 isExternal
@@ -87,7 +87,7 @@ export default function TribespotCard() {
             </Button>
             <Button
               leftIcon={<FaFigma />}
-              colorScheme="blue"
+              backgroundColor={useColorModeValue("gray.100", "gray.700")} color={useColorModeValue("blue.600", "blue.300")}
               variant="solid"
               fontSize={{ base: "xs", md: "sm", lg: "md" }}
             >

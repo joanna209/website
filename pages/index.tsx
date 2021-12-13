@@ -1,22 +1,40 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { Button, Heading, Link, Text, VStack } from "@chakra-ui/react";
+import {
+  Button,
+  Heading,
+  Link,
+  Text,
+  VStack,
+  useColorModeValue
+} from "@chakra-ui/react";
 import { FaArrowRight } from "react-icons/fa";
 import PageTransition from "../components/pageTransition";
-import dynamic from 'next/dynamic'
+import dynamic from "next/dynamic";
 
-// dynamically importing project cards 
-const WITWebsite = dynamic(() => import('../components/projectCards/witWebsite'));
-const ConnectMe = dynamic(() => import('../components/projectCards/connectMeCard'));
-const Tribespot = dynamic(() => import('../components/projectCards/tribespotCard'));
+// dynamically importing project cards
+const WITWebsite = dynamic(
+  () => import("../components/projectCards/witWebsite")
+);
+const ConnectMe = dynamic(
+  () => import("../components/projectCards/connectMeCard")
+);
+const Tribespot = dynamic(
+  () => import("../components/projectCards/tribespotCard")
+);
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Joanna He</title>
-        <meta name="description" content="Joanna's Portfolio" />
-        <link rel="preload" href={"https://i.imgur.com/gqC0mnt.jpg"} as="image" />
+        <title lang="en">Joanna He</title>
+        <meta lang="en" name="description" content="Joanna's Portfolio" />
+        <link
+          lang="en"
+          rel="preload"
+          href={"https://i.imgur.com/gqC0mnt.jpg"}
+          as="image"
+        />
       </Head>
 
       <VStack spacing={12} m={2}>
@@ -31,7 +49,7 @@ export default function Home() {
             </Heading>
 
             <Text
-              color={"gray.500"}
+              color={useColorModeValue("gray.600", "gray.400")}
               maxW={"3xl"}
               fontSize={{ base: "0xl", md: "1xl", lg: "2xl" }}
             >
@@ -42,7 +60,7 @@ export default function Home() {
               volunteering at the{" "}
               <Link
                 href="https://www.facebook.com/unsw.wit"
-                color="blue.500"
+                color={useColorModeValue("blue.600", "blue.300")}
                 isExternal
               >
                 UNSW Women in Technology (WIT)
@@ -64,7 +82,7 @@ export default function Home() {
               </span>
             </Heading>
             <Text
-              color={"gray.500"}
+              color={useColorModeValue("gray.600", "gray.400")}
               maxW={"3xl"}
               fontSize={{ base: "0xl", md: "1xl", lg: "2xl" }}
             >
@@ -73,7 +91,12 @@ export default function Home() {
             <WITWebsite />
             <Tribespot />
             <ConnectMe />
-            <Button rightIcon={<FaArrowRight />} variant="link" pt={2}>
+            <Button
+              rightIcon={<FaArrowRight />}
+              variant="link"
+              pt={2}
+              color={useColorModeValue("gray.600", "gray.400")}
+            >
               <Link href="/projects">See all projects</Link>
             </Button>
             {/* End of Projects Section */}
@@ -86,7 +109,7 @@ export default function Home() {
               </span>
             </Heading>
             <Text
-              color={"gray.500"}
+              color={useColorModeValue("gray.600", "gray.400")}
               maxW={"3xl"}
               fontSize={{ base: "0xl", md: "1xl", lg: "2xl" }}
               pb={10}
@@ -94,7 +117,7 @@ export default function Home() {
               Feel free to shoot me an{" "}
               <Link
                 href="mailto:joanna.he3@gmail.com"
-                color="blue.500"
+                color={useColorModeValue("blue.600", "blue.300")}
                 isExternal
               >
                 email
@@ -102,7 +125,7 @@ export default function Home() {
               or message me on{" "}
               <Link
                 href="https://www.linkedin.com/in/joannahe9/"
-                color="blue.500"
+                color={useColorModeValue("blue.600", "blue.300")}
                 isExternal
               >
                 LinkedIn

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Projects.module.css";
-import { Heading, Text, VStack } from "@chakra-ui/react";
+import { Heading, Text, VStack, useColorModeValue } from "@chakra-ui/react";
 import PageTransition from "../components/pageTransition";
 import dynamic from 'next/dynamic'
 
@@ -15,8 +15,8 @@ export default function Projects() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Joanna He</title>
-        <meta name="description" content="Joanna's Portfolio" />
+        <title lang="en">Joanna He</title>
+        <meta lang="en" name="description" content="Joanna's Portfolio" />
       </Head>
 
       <PageTransition>
@@ -30,7 +30,7 @@ export default function Projects() {
               </span>
             </Heading>
             <Text
-              color={"gray.500"}
+              color={useColorModeValue("gray.600", "gray.300")}
               fontSize={{ base: "0xl", md: "1xl", lg: "2xl" }}
             >
               Here are all of my projects and other things I have worked on

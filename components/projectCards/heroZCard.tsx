@@ -74,7 +74,7 @@ export default function HeroZCard() {
             Gen-Z individuals in order to improve financial wellbeing.
           </Text>
           <HStack pt={3}>
-            <Button leftIcon={<FaFigma />} colorScheme="blue" variant="solid">
+            <Button leftIcon={<FaFigma />} backgroundColor={useColorModeValue("gray.100", "gray.700")} color={useColorModeValue("blue.600", "blue.300")} variant="solid">
               <Link
                 href="https://www.figma.com/proto/7b3JlZ92EYiGSkeuXJkMix/Wireframe---Sandbox-Challenge?node-id=66%3A4&scaling=scale-down&page-id=66%3A4"
                 isExternal

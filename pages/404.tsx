@@ -7,6 +7,7 @@ import {
   Text,
   Container,
   Button,
+  useColorModeValue
 } from "@chakra-ui/react";
 import PageTransition from "../components/pageTransition";
 
@@ -25,10 +26,10 @@ export default function NotFound() {
         <VStack>
         <PageTransition>
           <Heading size="3xl">404</Heading>
-          <Text mb={8} pb={4}>
+          <Text color={useColorModeValue("gray.600", "gray.400")} mb={8} pb={4}>
             Page not found
           </Text>
-          <Button colorScheme="blue" variant="solid">
+          <Button backgroundColor={useColorModeValue("gray.100", "gray.700")} color={useColorModeValue("blue.600", "blue.300")} variant="solid">
             <Link href="/">Return home</Link>
           </Button>
           </PageTransition>

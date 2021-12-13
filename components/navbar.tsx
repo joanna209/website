@@ -33,12 +33,13 @@ export default function Navbar() {
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={7}>
               <Tooltip label="Dark Mode" aria-label="Dark mode tooltip">
-                <Button
+                <IconButton
                   onClick={toggleColorMode}
                   bg={useColorModeValue("gray.100", "gray.900")}
+                  aria-label="Dark mode button"
                 >
                   {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-                </Button>
+                </IconButton>
               </Tooltip>
             </Stack>
           </Flex>
