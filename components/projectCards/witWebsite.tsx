@@ -6,7 +6,7 @@ import {
   Tag,
   Text,
   useColorModeValue,
-  VStack,
+  VStack
 } from "@chakra-ui/react";
 import { FaGithub, FaLink } from "react-icons/fa";
 
@@ -57,12 +57,6 @@ export default function WITCard() {
               fontSize={{ base: "xs", md: "sm", lg: "md" }}
               bg={useColorModeValue("gray.200", "gray.700")}
             >
-              JavaScript
-            </Tag>
-            <Tag
-              fontSize={{ base: "xs", md: "sm", lg: "md" }}
-              bg={useColorModeValue("gray.200", "gray.700")}
-            >
               React
             </Tag>
             <Tag
@@ -76,12 +70,6 @@ export default function WITCard() {
               bg={useColorModeValue("gray.200", "gray.700")}
             >
               PostgreSQL
-            </Tag>
-            <Tag
-              fontSize={{ base: "xs", md: "sm", lg: "md" }}
-              bg={useColorModeValue("gray.200", "gray.700")}
-            >
-              Node
             </Tag>
           </HStack>
 

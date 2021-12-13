@@ -1,6 +1,6 @@
 # joannahe.me
 
-This repository houses the codebase of my portfolio website.
+This repository houses the codebase of my [portfolio website](https://joannahe.me).
 
 ## Getting Started
 

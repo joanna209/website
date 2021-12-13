@@ -29,10 +29,10 @@ export default function Projects() {
       </Head>
 
       <PageTransition>
-        <VStack spacing={12}>
+          <div className={styles.section}>
           <VStack spacing={4} align="start">
             {/* Start of Projects Section */}
-            <Heading fontSize={"3xl"} pt={10}>
+            <Heading fontSize={"3xl"} pt={10} >
               Projects{" "}
               <span role="img" aria-label="rocket">
                 🚀
@@ -58,7 +58,7 @@ export default function Projects() {
             <Heading pb={10}> </Heading>
             {/* End of Projects Section */}
           </VStack>
-        </VStack>
+          </div>
       </PageTransition>
     </div>
   );

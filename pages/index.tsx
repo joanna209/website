@@ -6,7 +6,7 @@ import {
   Link,
   Text,
   VStack,
-  useColorModeValue
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { FaArrowRight } from "react-icons/fa";
 import PageTransition from "../components/pageTransition";
@@ -35,14 +35,14 @@ export default function Home() {
           href={"https://i.imgur.com/gqC0mnt.jpg"}
           as="image"
         />
-        <link rel='manifest' href='/manifest.json' />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
-
-      <VStack spacing={12} m={2}>
+      
         <PageTransition>
+          <div className= {styles.section}>
           <VStack spacing={4} align="start">
             {/* Start of About Me Section */}
-            <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
+            <Heading fontSize={"3xl"} pt={10}>
               Hi, I&apos;m Joanna{" "}
               <span role="img" aria-label="waving-hand">
                 👋
@@ -76,7 +76,7 @@ export default function Home() {
             {/* End of About Me Section */}
 
             {/* Start of Projects Section */}
-            <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
+            <Heading fontSize={"3xl"} pt={10}>
               Projects{" "}
               <span role="img" aria-label="rocket">
                 🚀
@@ -86,16 +86,19 @@ export default function Home() {
               color={useColorModeValue("gray.600", "gray.400")}
               maxW={"3xl"}
               fontSize={{ base: "0xl", md: "1xl", lg: "2xl" }}
+              pb={4}
             >
               Here are some of my favourite projects I&apos;ve worked on!
             </Text>
+            <VStack spacing={4} align="start">
             <WITWebsite />
             <Tribespot />
             <ConnectMe />
+            </VStack>
             <Button
               rightIcon={<FaArrowRight />}
               variant="link"
-              pt={2}
+              pt={5}
               color={useColorModeValue("gray.600", "gray.400")}
             >
               <Link href="/projects">See all projects</Link>
@@ -103,7 +106,7 @@ export default function Home() {
             {/* End of Projects Section */}
 
             {/* Start of Contact Section */}
-            <Heading fontSize={{ base: "1xl", md: "2xl", lg: "3xl" }} pt={10}>
+            <Heading fontSize={"3xl"} pt={10}>
               Let&apos;s connect{" "}
               <span role="img" aria-label="glowing-star">
                 🌟
@@ -133,10 +136,11 @@ export default function Home() {
               </Link>
               !
             </Text>
+            
             {/* End of Contact Section */}
           </VStack>
+          </div>
         </PageTransition>
-      </VStack>
     </div>
   );
 }
