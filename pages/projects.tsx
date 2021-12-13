@@ -17,6 +17,7 @@ export default function Projects() {
       <Head>
         <title lang="en">Joanna He</title>
         <meta lang="en" name="description" content="Joanna's Portfolio" />
+        <link rel='manifest' href='/manifest.json' />
       </Head>
 
       <PageTransition>

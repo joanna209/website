@@ -35,6 +35,7 @@ export default function Home() {
           href={"https://i.imgur.com/gqC0mnt.jpg"}
           as="image"
         />
+        <link rel='manifest' href='/manifest.json' />
       </Head>
 
       <VStack spacing={12} m={2}>
