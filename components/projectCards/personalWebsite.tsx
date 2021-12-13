@@ -83,7 +83,12 @@ export default function PersonalWebsiteCard() {
           </Text>
 
           <HStack pt={3}>
-            <Button leftIcon={<FaGithub />} backgroundColor={useColorModeValue("gray.100", "gray.700")} color={useColorModeValue("blue.600", "blue.300")} variant="solid">
+            <Button
+              leftIcon={<FaGithub />}
+              backgroundColor={useColorModeValue("gray.100", "gray.700")}
+              color={useColorModeValue("blue.600", "blue.300")}
+              variant="solid"
+            >
               <Link
                 href="https://github.com/joanna209/website"
                 isExternal

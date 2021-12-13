@@ -2,14 +2,22 @@ import Head from "next/head";
 import styles from "../styles/Projects.module.css";
 import { Heading, Text, VStack, useColorModeValue } from "@chakra-ui/react";
 import PageTransition from "../components/pageTransition";
-import dynamic from 'next/dynamic'
+import dynamic from "next/dynamic";
 
-// dynamically importing card components 
-const HeroZ = dynamic(() => import('../components/projectCards/heroZCard'));
-const PersonalWebsite = dynamic(() => import('../components/projectCards/personalWebsite'));
-const WITWebsite = dynamic(() => import('../components/projectCards/witWebsite'));
-const ConnectMe = dynamic(() => import('../components/projectCards/connectMeCard'));
-const Tribespot = dynamic(() => import('../components/projectCards/tribespotCard'));
+// dynamically importing card components
+const HeroZ = dynamic(() => import("../components/projectCards/heroZCard"));
+const PersonalWebsite = dynamic(
+  () => import("../components/projectCards/personalWebsite")
+);
+const WITWebsite = dynamic(
+  () => import("../components/projectCards/witWebsite")
+);
+const ConnectMe = dynamic(
+  () => import("../components/projectCards/connectMeCard")
+);
+const Tribespot = dynamic(
+  () => import("../components/projectCards/tribespotCard")
+);
 
 export default function Projects() {
   return (
@@ -17,14 +25,14 @@ export default function Projects() {
       <Head>
         <title lang="en">Joanna He</title>
         <meta lang="en" name="description" content="Joanna's Portfolio" />
-        <link rel='manifest' href='/manifest.json' />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
 
       <PageTransition>
-        <VStack spacing={12}>
+          <div className={styles.section}>
           <VStack spacing={4} align="start">
             {/* Start of Projects Section */}
-            <Heading fontSize={"3xl"} pt={10}>
+            <Heading fontSize={"3xl"} pt={10} >
               Projects{" "}
               <span role="img" aria-label="rocket">
                 🚀
@@ -50,7 +58,7 @@ export default function Projects() {
             <Heading pb={10}> </Heading>
             {/* End of Projects Section */}
           </VStack>
-        </VStack>
+          </div>
       </PageTransition>
     </div>
   );

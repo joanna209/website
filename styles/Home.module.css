@@ -1,4 +1,51 @@
 .container {
-    padding: 20px;
+  padding-top: 10px;
+  width: 55%;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
 }
-  
+
+/* Mobile responsiveness */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .container {
+    width: 90%;
+  }
+
+  .section {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    width: 90%;
+  }
+
+  .section {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .container {
+    width: 80%;
+  }
+
+  .section {
+    width: 75%;
+  }
+}

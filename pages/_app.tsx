@@ -1,9 +1,9 @@
 import "../styles/globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import Layout from "../components/layout";
-import type { AppProps, NextWebVitalsMetric } from 'next/app';
+import type { AppProps, NextWebVitalsMetric } from "next/app";
 
-function MyApp({ Component, pageProps } : AppProps) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider>
       <Layout>
@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps } : AppProps) {
 }
 
 export function reportWebVitals(metric: NextWebVitalsMetric) {
-  console.log(metric)
+  console.log(metric);
 }
 
-export default MyApp
+export default MyApp;

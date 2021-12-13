@@ -6,7 +6,7 @@ import {
   Tag,
   Text,
   useColorModeValue,
-  VStack,
+  VStack
 } from "@chakra-ui/react";
 import { FaGithub, FaLink } from "react-icons/fa";
 
@@ -48,44 +48,29 @@ export default function WITCard() {
       <VStack align="start" justify="flex-start" spacing={1}>
         <VStack spacing={0} align="start">
           <HStack>
-            <Text
-              fontWeight="bold"
-              fontSize={"xl"}
-            >
+            <Text fontWeight="bold" fontSize={"xl"}>
               WIT Website
             </Text>
           </HStack>
           <HStack pb={3}>
-          <Tag
-            fontSize={{ base: "xs", md: "sm", lg: "md" }}
-            bg={useColorModeValue("gray.200", "gray.700")}
-          >
-            JavaScript
-          </Tag>
-          <Tag
-            fontSize={{ base: "xs", md: "sm", lg: "md" }}
-            bg={useColorModeValue("gray.200", "gray.700")}
-          >
-            React
-          </Tag>
-          <Tag
-            fontSize={{ base: "xs", md: "sm", lg: "md" }}
-            bg={useColorModeValue("gray.200", "gray.700")}
-          >
-            Express
-          </Tag>
-          <Tag
-            fontSize={{ base: "xs", md: "sm", lg: "md" }}
-            bg={useColorModeValue("gray.200", "gray.700")}
-          >
-            PostgreSQL
-          </Tag>
-          <Tag
-            fontSize={{ base: "xs", md: "sm", lg: "md" }}
-            bg={useColorModeValue("gray.200", "gray.700")}
-          >
-            Node
-          </Tag>
+            <Tag
+              fontSize={{ base: "xs", md: "sm", lg: "md" }}
+              bg={useColorModeValue("gray.200", "gray.700")}
+            >
+              React
+            </Tag>
+            <Tag
+              fontSize={{ base: "xs", md: "sm", lg: "md" }}
+              bg={useColorModeValue("gray.200", "gray.700")}
+            >
+              Express
+            </Tag>
+            <Tag
+              fontSize={{ base: "xs", md: "sm", lg: "md" }}
+              bg={useColorModeValue("gray.200", "gray.700")}
+            >
+              PostgreSQL
+            </Tag>
           </HStack>
 
           <Text
@@ -98,7 +83,12 @@ export default function WITCard() {
           </Text>
 
           <HStack pt={3}>
-            <Button leftIcon={<FaLink />} backgroundColor={useColorModeValue("gray.100", "gray.700")} color={useColorModeValue("blue.600", "blue.300")} variant="solid">
+            <Button
+              leftIcon={<FaLink />}
+              backgroundColor={useColorModeValue("gray.100", "gray.700")}
+              color={useColorModeValue("blue.600", "blue.300")}
+              variant="solid"
+            >
               <Link
                 href="https://unswwit.com/#/"
                 isExternal
@@ -109,11 +99,15 @@ export default function WITCard() {
             </Button>
             <Button
               leftIcon={<FaGithub />}
-              backgroundColor={useColorModeValue("gray.100", "gray.700")} color={useColorModeValue("blue.600", "blue.300")}
+              backgroundColor={useColorModeValue("gray.100", "gray.700")}
+              color={useColorModeValue("blue.600", "blue.300")}
               variant="solid"
               fontSize={{ base: "xs", md: "sm", lg: "md" }}
             >
-              <Link href="https://github.com/unswwit/website/commits?author=joanna209" isExternal>
+              <Link
+                href="https://github.com/unswwit/website/commits?author=joanna209"
+                isExternal
+              >
                 Github
               </Link>
             </Button>
