@@ -60,6 +60,12 @@ export default function WITCard() {
             fontSize={{ base: "xs", md: "sm", lg: "md" }}
             bg={useColorModeValue("gray.200", "gray.700")}
           >
+            JavaScript
+          </Tag>
+          <Tag
+            fontSize={{ base: "xs", md: "sm", lg: "md" }}
+            bg={useColorModeValue("gray.200", "gray.700")}
+          >
             React
           </Tag>
           <Tag
@@ -73,6 +79,12 @@ export default function WITCard() {
             bg={useColorModeValue("gray.200", "gray.700")}
           >
             PostgreSQL
+          </Tag>
+          <Tag
+            fontSize={{ base: "xs", md: "sm", lg: "md" }}
+            bg={useColorModeValue("gray.200", "gray.700")}
+          >
+            Node
           </Tag>
           </HStack>
 
@@ -101,7 +113,7 @@ export default function WITCard() {
               variant="solid"
               fontSize={{ base: "xs", md: "sm", lg: "md" }}
             >
-              <Link href="https://github.com/unswwit/website" isExternal>
+              <Link href="https://github.com/unswwit/website/commits?author=joanna209" isExternal>
                 Github
               </Link>
             </Button>

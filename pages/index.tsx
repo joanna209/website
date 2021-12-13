@@ -1,11 +1,14 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { Button, Heading, Link, Text, VStack } from "@chakra-ui/react";
-import ConnectMeCard from "../components/projectCards/connectMeCard";
-import TribespotCard from "../components/projectCards/tribespotCard";
-import WITCard from "../components/projectCards/witWebsite";
 import { FaArrowRight } from "react-icons/fa";
 import PageTransition from "../components/pageTransition";
+import dynamic from 'next/dynamic'
+
+// dynamically importing project cards 
+const WITWebsite = dynamic(() => import('../components/projectCards/witWebsite'));
+const ConnectMe = dynamic(() => import('../components/projectCards/connectMeCard'));
+const Tribespot = dynamic(() => import('../components/projectCards/tribespotCard'));
 
 export default function Home() {
   return (
@@ -67,9 +70,9 @@ export default function Home() {
             >
               Here are some of my favourite projects I&apos;ve worked on!
             </Text>
-            <WITCard />
-            <TribespotCard />
-            <ConnectMeCard />
+            <WITWebsite />
+            <Tribespot />
+            <ConnectMe />
             <Button rightIcon={<FaArrowRight />} variant="link" pt={2}>
               <Link href="/projects">See all projects</Link>
             </Button>

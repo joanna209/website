@@ -48,17 +48,19 @@ export default function PersonalWebsiteCard() {
       <VStack align="start" justify="flex-start" spacing={1}>
         <VStack spacing={0} align="start">
           <HStack>
-            <Text
-              fontWeight="bold"
-              fontSize={"xl"}
-              noOfLines={2}
-            >
+            <Text fontWeight="bold" fontSize={"xl"} noOfLines={2}>
               Portfolio Website
             </Text>
           </HStack>
 
           <HStack pb={3}>
-          <Tag
+            <Tag
+              fontSize={{ base: "xs", md: "sm", lg: "md" }}
+              bg={useColorModeValue("gray.200", "gray.700")}
+            >
+              Typescript
+            </Tag>
+            <Tag
               fontSize={{ base: "xs", md: "sm", lg: "md" }}
               bg={useColorModeValue("gray.200", "gray.700")}
             >
