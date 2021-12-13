@@ -7,7 +7,7 @@ import {
   Text,
   Container,
   Button,
-  useColorModeValue
+  useColorModeValue,
 } from "@chakra-ui/react";
 import PageTransition from "../components/pageTransition";
 
@@ -20,18 +20,26 @@ export default function NotFound() {
           canonical="https://joannahe.me/404"
           openGraph={{
             url: "https://joannahe.me/404",
-            title: "Joanna He"
+            title: "Joanna He",
           }}
         />
         <VStack>
-        <PageTransition>
-          <Heading size="3xl">404</Heading>
-          <Text color={useColorModeValue("gray.600", "gray.400")} mb={8} pb={4}>
-            Page not found
-          </Text>
-          <Button backgroundColor={useColorModeValue("gray.100", "gray.700")} color={useColorModeValue("blue.600", "blue.300")} variant="solid">
-            <Link href="/">Return home</Link>
-          </Button>
+          <PageTransition>
+            <Heading size="3xl">404</Heading>
+            <Text
+              color={useColorModeValue("gray.600", "gray.400")}
+              mb={8}
+              pb={4}
+            >
+              Page not found
+            </Text>
+            <Button
+              backgroundColor={useColorModeValue("gray.100", "gray.700")}
+              color={useColorModeValue("blue.600", "blue.300")}
+              variant="solid"
+            >
+              <Link href="/">Return home</Link>
+            </Button>
           </PageTransition>
         </VStack>
       </Center>

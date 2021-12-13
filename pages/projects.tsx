@@ -2,14 +2,22 @@ import Head from "next/head";
 import styles from "../styles/Projects.module.css";
 import { Heading, Text, VStack, useColorModeValue } from "@chakra-ui/react";
 import PageTransition from "../components/pageTransition";
-import dynamic from 'next/dynamic'
+import dynamic from "next/dynamic";
 
-// dynamically importing card components 
-const HeroZ = dynamic(() => import('../components/projectCards/heroZCard'));
-const PersonalWebsite = dynamic(() => import('../components/projectCards/personalWebsite'));
-const WITWebsite = dynamic(() => import('../components/projectCards/witWebsite'));
-const ConnectMe = dynamic(() => import('../components/projectCards/connectMeCard'));
-const Tribespot = dynamic(() => import('../components/projectCards/tribespotCard'));
+// dynamically importing card components
+const HeroZ = dynamic(() => import("../components/projectCards/heroZCard"));
+const PersonalWebsite = dynamic(
+  () => import("../components/projectCards/personalWebsite")
+);
+const WITWebsite = dynamic(
+  () => import("../components/projectCards/witWebsite")
+);
+const ConnectMe = dynamic(
+  () => import("../components/projectCards/connectMeCard")
+);
+const Tribespot = dynamic(
+  () => import("../components/projectCards/tribespotCard")
+);
 
 export default function Projects() {
   return (
@@ -17,7 +25,7 @@ export default function Projects() {
       <Head>
         <title lang="en">Joanna He</title>
         <meta lang="en" name="description" content="Joanna's Portfolio" />
-        <link rel='manifest' href='/manifest.json' />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
 
       <PageTransition>

@@ -48,11 +48,7 @@ export default function ConnectMeCard() {
       <VStack align="start" justify="flex-start" spacing={1}>
         <VStack spacing={0} align="start">
           <HStack>
-            <Text
-              fontWeight="bold"
-              fontSize={"xl"}
-              noOfLines={2}
-            >
+            <Text fontWeight="bold" fontSize={"xl"} noOfLines={2}>
               ConnectMe
             </Text>
           </HStack>
@@ -74,7 +70,12 @@ export default function ConnectMeCard() {
             wellbeing.
           </Text>
           <HStack pt={3}>
-            <Button leftIcon={<FaFigma />} backgroundColor={useColorModeValue("gray.100", "gray.700")} color={useColorModeValue("blue.600", "blue.300")} variant="solid">
+            <Button
+              leftIcon={<FaFigma />}
+              backgroundColor={useColorModeValue("gray.100", "gray.700")}
+              color={useColorModeValue("blue.600", "blue.300")}
+              variant="solid"
+            >
               <Link
                 href="https://www.figma.com/proto/S5wzsWY28hpPvpa7L1WqQo/ConnectMe?node-id=2%3A11&scaling=scale-down&page-id=0%3A1"
                 isExternal
