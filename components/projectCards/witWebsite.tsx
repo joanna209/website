@@ -6,8 +6,8 @@ import {
   Tag,
   Text,
   useColorModeValue,
-  VStack, 
-  Wrap
+  VStack,
+  Wrap,
 } from "@chakra-ui/react";
 import { FaGithub, FaLink } from "react-icons/fa";
 
@@ -55,24 +55,24 @@ export default function WITCard() {
           </HStack>
           <HStack pb={3}>
             <Wrap>
-            <Tag
-              fontSize={{ base: "xs", md: "sm", lg: "md" }}
-              bg={useColorModeValue("gray.200", "gray.700")}
-            >
-              React
-            </Tag>
-            <Tag
-              fontSize={{ base: "xs", md: "sm", lg: "md" }}
-              bg={useColorModeValue("gray.200", "gray.700")}
-            >
-              Express
-            </Tag>
-            <Tag
-              fontSize={{ base: "xs", md: "sm", lg: "md" }}
-              bg={useColorModeValue("gray.200", "gray.700")}
-            >
-              PostgreSQL
-            </Tag>
+              <Tag
+                fontSize={{ base: "xs", md: "sm", lg: "md" }}
+                bg={useColorModeValue("gray.200", "gray.700")}
+              >
+                React
+              </Tag>
+              <Tag
+                fontSize={{ base: "xs", md: "sm", lg: "md" }}
+                bg={useColorModeValue("gray.200", "gray.700")}
+              >
+                Express
+              </Tag>
+              <Tag
+                fontSize={{ base: "xs", md: "sm", lg: "md" }}
+                bg={useColorModeValue("gray.200", "gray.700")}
+              >
+                PostgreSQL
+              </Tag>
             </Wrap>
           </HStack>
 
@@ -87,34 +87,34 @@ export default function WITCard() {
 
           <HStack pt={3}>
             <Wrap>
-            <Button
-              leftIcon={<FaLink />}
-              backgroundColor={useColorModeValue("gray.100", "gray.700")}
-              color={useColorModeValue("blue.600", "blue.300")}
-              variant="solid"
-            >
-              <Link
-                href="https://unswwit.com/#/"
-                isExternal
+              <Button
+                leftIcon={<FaLink />}
+                backgroundColor={useColorModeValue("gray.100", "gray.700")}
+                color={useColorModeValue("blue.600", "blue.300")}
+                variant="solid"
+              >
+                <Link
+                  href="https://unswwit.com/#/"
+                  isExternal
+                  fontSize={{ base: "xs", md: "sm", lg: "md" }}
+                >
+                  Website
+                </Link>
+              </Button>
+              <Button
+                leftIcon={<FaGithub />}
+                backgroundColor={useColorModeValue("gray.100", "gray.700")}
+                color={useColorModeValue("blue.600", "blue.300")}
+                variant="solid"
                 fontSize={{ base: "xs", md: "sm", lg: "md" }}
               >
-                Website
-              </Link>
-            </Button>
-            <Button
-              leftIcon={<FaGithub />}
-              backgroundColor={useColorModeValue("gray.100", "gray.700")}
-              color={useColorModeValue("blue.600", "blue.300")}
-              variant="solid"
-              fontSize={{ base: "xs", md: "sm", lg: "md" }}
-            >
-              <Link
-                href="https://github.com/unswwit/website/commits?author=joanna209"
-                isExternal
-              >
-                Github
-              </Link>
-            </Button>
+                <Link
+                  href="https://github.com/unswwit/website/commits?author=joanna209"
+                  isExternal
+                >
+                  Github
+                </Link>
+              </Button>
             </Wrap>
           </HStack>
         </VStack>

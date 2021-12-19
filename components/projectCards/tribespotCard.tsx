@@ -8,7 +8,7 @@ import {
   Text,
   useColorModeValue,
   VStack,
-  Wrap
+  Wrap,
 } from "@chakra-ui/react";
 import { FaFigma, FaLink } from "react-icons/fa";
 
@@ -74,34 +74,34 @@ export default function TribespotCard() {
 
           <HStack pt={3}>
             <Wrap>
-            <Button
-              leftIcon={<FaLink />}
-              backgroundColor={useColorModeValue("gray.100", "gray.700")}
-              color={useColorModeValue("blue.600", "blue.300")}
-              variant="solid"
-            >
-              <Link
-                href="https://tribespot.co/"
-                isExternal
+              <Button
+                leftIcon={<FaLink />}
+                backgroundColor={useColorModeValue("gray.100", "gray.700")}
+                color={useColorModeValue("blue.600", "blue.300")}
+                variant="solid"
+              >
+                <Link
+                  href="https://tribespot.co/"
+                  isExternal
+                  fontSize={{ base: "xs", md: "sm", lg: "md" }}
+                >
+                  Website
+                </Link>
+              </Button>
+              <Button
+                leftIcon={<FaFigma />}
+                backgroundColor={useColorModeValue("gray.100", "gray.700")}
+                color={useColorModeValue("blue.600", "blue.300")}
+                variant="solid"
                 fontSize={{ base: "xs", md: "sm", lg: "md" }}
               >
-                Website
-              </Link>
-            </Button>
-            <Button
-              leftIcon={<FaFigma />}
-              backgroundColor={useColorModeValue("gray.100", "gray.700")}
-              color={useColorModeValue("blue.600", "blue.300")}
-              variant="solid"
-              fontSize={{ base: "xs", md: "sm", lg: "md" }}
-            >
-              <Link
-                href="https://www.figma.com/proto/Ci8h9JaNMyWcUV7ZnHguWW/Prototype-(final)?embed_host=notion&kind=&node-id=156%3A2385&page-id=156%3A2017&scaling=scale-down&show-proto-sidebar=1&starting-point-node-id=156%3A2385"
-                isExternal
-              >
-                Prototype
-              </Link>
-            </Button>
+                <Link
+                  href="https://www.figma.com/proto/Ci8h9JaNMyWcUV7ZnHguWW/Prototype-(final)?embed_host=notion&kind=&node-id=156%3A2385&page-id=156%3A2017&scaling=scale-down&show-proto-sidebar=1&starting-point-node-id=156%3A2385"
+                  isExternal
+                >
+                  Prototype
+                </Link>
+              </Button>
             </Wrap>
           </HStack>
         </VStack>
