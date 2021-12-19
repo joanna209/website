@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 
-/* Mobile responsiveness */
+/*--- Responsiveness ---*/
 @media screen and (max-width: 1024px) {
   .container {
     width: 75%;
@@ -42,10 +42,10 @@
 
 @media screen and (max-width: 300px) {
   .container {
-    width: 80%;
+    width: 90%;
   }
 
   .section {
-    width: 75%;
+    width: 65%;
   }
 }

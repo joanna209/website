@@ -37,9 +37,9 @@ export default function Home() {
         />
         <link rel="manifest" href="/manifest.json" />
       </Head>
-      
-        <PageTransition>
-          <div className= {styles.section}>
+
+      <PageTransition>
+        <div className={styles.section}>
           <VStack spacing={4} align="start">
             {/* Start of About Me Section */}
             <Heading fontSize={"3xl"} pt={10}>
@@ -91,9 +91,9 @@ export default function Home() {
               Here are some of my favourite projects I&apos;ve worked on!
             </Text>
             <VStack spacing={4} align="start">
-            <WITWebsite />
-            <Tribespot />
-            <ConnectMe />
+              <WITWebsite />
+              <Tribespot />
+              <ConnectMe />
             </VStack>
             <Button
               rightIcon={<FaArrowRight />}
@@ -136,11 +136,11 @@ export default function Home() {
               </Link>
               !
             </Text>
-            
+
             {/* End of Contact Section */}
           </VStack>
-          </div>
-        </PageTransition>
+        </div>
+      </PageTransition>
     </div>
   );
 }

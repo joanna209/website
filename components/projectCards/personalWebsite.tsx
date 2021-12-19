@@ -7,12 +7,14 @@ import {
   Text,
   useColorModeValue,
   VStack,
+  Wrap,
 } from "@chakra-ui/react";
-import { FaGithub, FaLink } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 export default function PersonalWebsiteCard() {
   return (
     <HStack
+      position="relative"
       p={4}
       bg={useColorModeValue("white", "neutralD.100")}
       rounded="lg"
@@ -54,24 +56,27 @@ export default function PersonalWebsiteCard() {
           </HStack>
 
           <HStack pb={3}>
-            <Tag
-              fontSize={{ base: "xs", md: "sm", lg: "md" }}
-              bg={useColorModeValue("gray.200", "gray.700")}
-            >
-              Typescript
-            </Tag>
-            <Tag
-              fontSize={{ base: "xs", md: "sm", lg: "md" }}
-              bg={useColorModeValue("gray.200", "gray.700")}
-            >
-              Next.js
-            </Tag>
-            <Tag
-              fontSize={{ base: "xs", md: "sm", lg: "md" }}
-              bg={useColorModeValue("gray.200", "gray.700")}
-            >
-              ChakraUI
-            </Tag>
+            <Wrap>
+              <Tag
+                fontSize={{ base: "xs", md: "sm", lg: "md" }}
+                bg={useColorModeValue("gray.200", "gray.700")}
+              >
+                Typescript
+              </Tag>
+
+              <Tag
+                fontSize={{ base: "xs", md: "sm", lg: "md" }}
+                bg={useColorModeValue("gray.200", "gray.700")}
+              >
+                Next.js
+              </Tag>
+              <Tag
+                fontSize={{ base: "xs", md: "sm", lg: "md" }}
+                bg={useColorModeValue("gray.200", "gray.700")}
+              >
+                ChakraUI
+              </Tag>
+            </Wrap>
           </HStack>
 
           <Text
