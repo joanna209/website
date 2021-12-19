@@ -6,7 +6,8 @@ import {
   Tag,
   Text,
   useColorModeValue,
-  VStack
+  VStack, 
+  Wrap
 } from "@chakra-ui/react";
 import { FaGithub, FaLink } from "react-icons/fa";
 
@@ -53,6 +54,7 @@ export default function WITCard() {
             </Text>
           </HStack>
           <HStack pb={3}>
+            <Wrap>
             <Tag
               fontSize={{ base: "xs", md: "sm", lg: "md" }}
               bg={useColorModeValue("gray.200", "gray.700")}
@@ -71,6 +73,7 @@ export default function WITCard() {
             >
               PostgreSQL
             </Tag>
+            </Wrap>
           </HStack>
 
           <Text
@@ -83,6 +86,7 @@ export default function WITCard() {
           </Text>
 
           <HStack pt={3}>
+            <Wrap>
             <Button
               leftIcon={<FaLink />}
               backgroundColor={useColorModeValue("gray.100", "gray.700")}
@@ -111,6 +115,7 @@ export default function WITCard() {
                 Github
               </Link>
             </Button>
+            </Wrap>
           </HStack>
         </VStack>
       </VStack>

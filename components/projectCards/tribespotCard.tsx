@@ -8,6 +8,7 @@ import {
   Text,
   useColorModeValue,
   VStack,
+  Wrap
 } from "@chakra-ui/react";
 import { FaFigma, FaLink } from "react-icons/fa";
 
@@ -72,6 +73,7 @@ export default function TribespotCard() {
           </Text>
 
           <HStack pt={3}>
+            <Wrap>
             <Button
               leftIcon={<FaLink />}
               backgroundColor={useColorModeValue("gray.100", "gray.700")}
@@ -100,6 +102,7 @@ export default function TribespotCard() {
                 Prototype
               </Link>
             </Button>
+            </Wrap>
           </HStack>
         </VStack>
       </VStack>
