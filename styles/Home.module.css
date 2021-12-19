@@ -7,12 +7,6 @@
 }
 
 /*--- Responsiveness ---*/
-@media screen and (max-width: 1700px) {
-  .container {
-    width: 70%;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .container {
     width: 75%;
