@@ -1,5 +1,5 @@
 .container {
-  padding-top: 10px;
+  padding-top: 20px;
   width: 55%;
   align-items: center;
   display: flex;
@@ -9,13 +9,13 @@
 /*--- Responsiveness ---*/
 @media screen and (max-width: 1700px) {
   .container {
-    width: 45%;
+    width: 47%;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1450px) {
   .container {
-    width: 75%;
+    width: 55%;
   }
 }
 
