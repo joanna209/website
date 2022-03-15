@@ -54,9 +54,9 @@ export default function Home() {
               maxW={"3xl"}
               fontSize={{ base: "0xl", md: "1xl", lg: "2xl" }}
             >
-              I am a software engineer who is passionate about how technology
+              I am an aspiring software engineer who is passionate about how technology
               can improve the quality of life for others and make the world a
-              better place. Currently, I am a second year student studying B.
+              better place. Currently, I am a third year student studying B.
               Advanced Science/Computer Science at UNSW Sydney and am
               volunteering at the{" "}
               <Link
