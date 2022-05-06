@@ -10,31 +10,31 @@
     "analyze": "cross-env ANALYZE=true next build"
   },
   "dependencies": {
-    "@babel/core": "^7.17.5",
-    "@chakra-ui/icons": "^1.1.1",
-    "@chakra-ui/react": "^1.8.6",
-    "@emotion/react": "^11.7.0",
-    "@emotion/styled": "^11.6.0",
-    "@next/bundle-analyzer": "^12.0.8",
-    "cross-env": "^7.0.3",
-    "duplicate-package-checker-webpack-plugin": "^3.0.0",
-    "eslint": "^8.4.1",
-    "framer-motion": "^5.6.0",
-    "heroicons-react": "^1.4.1",
+    "@babel/core": "7.17.5",
+    "@chakra-ui/icons": "1.1.1",
+    "@chakra-ui/react": "1.8.6",
+    "@emotion/react": "11.7.0",
+    "@emotion/styled": "11.6.0",
+    "@next/bundle-analyzer": "12.0.8",
+    "cross-env": "7.0.3",
+    "duplicate-package-checker-webpack-plugin": "3.0.0",
+    "eslint": "8.4.1",
+    "framer-motion": "5.6.0",
+    "heroicons-react": "1.4.1",
     "next": "12.1.0",
-    "next-pwa": "^5.4.4",
-    "next-seo": "^5.1.0",
+    "next-pwa": "5.4.4",
+    "next-seo": "5.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-icons": "^4.3.1",
-    "react-use-disclosure": "^4.0.0",
-    "use-sound": "^4.0.1"
+    "react-icons": "4.3.1",
+    "react-use-disclosure": "4.0.0",
+    "use-sound": "4.0.1"
   },
   "devDependencies": {
-    "babel-plugin-transform-define": "^2.0.1",
+    "babel-plugin-transform-define": "2.0.1",
     "eslint-config-next": "12.0.8",
-    "typescript": "^4.6.2",
-    "webpack-bundle-analyzer": "^4.5.0"
+    "typescript": "4.6.2",
+    "webpack-bundle-analyzer": "4.5.0"
   },
   "optionalDependencies": {
     "fsevents": "^2.3.2"
