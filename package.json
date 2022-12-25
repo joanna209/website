@@ -6,8 +6,8 @@
     "build:css": "tailwindcss -m -i ./styles/app.css -o app/styles/app.css",
     "dev": "concurrently \"npm run dev:css\" \"remix dev\"",
     "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css",
-    "start": "remix-serve build",
-    "lint": "eslint app --ext .ts",
+    "start": "cross-env NODE_ENV=production netlify dev",
+    "lint": "eslint app --ext .ts,.tsx",
     "typecheck": "tsc -b"
   },
   "dependencies": {

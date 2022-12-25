@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import { GithubLogo, Link } from "phosphor-react";
 import React from "react";
 
