@@ -3,8 +3,23 @@
   "extends": [
     "config:base"
   ],
+  "prHourlyLimit": 2,
+  "labels": ["dependencies"],
+  "baseBranches": ["main"],
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true
-  }
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "matchUpdateTypes": ["patch"],
+      "groupName": "weekly patch updates",
+      "schedule": ["before 5am every monday"]
+    }
+  ]
 }
