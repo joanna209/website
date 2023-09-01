@@ -38,6 +38,7 @@ To deploy, push changes to the master branch for changes to be reflected on the 
 
 - [Remix](https://remix.run/) - The web framework used
 - [TailwindCSS](https://tailwindcss.com/) - Component library
+- [Sanity.io](https://www.sanity.io/) - Headless CMS
 
 ## Acknowledgments
 

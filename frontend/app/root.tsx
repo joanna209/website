@@ -9,7 +9,6 @@ import {
 } from "@remix-run/react";
 import styles from "./styles/app.css";
 import Navbar from "./components/navbar";
-import Footer from "./components/footer";
 
 // SEO rendering
 export const meta: MetaFunction = () => ({
@@ -32,7 +31,6 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
-        <Footer />
       </body>
     </html>
   );
