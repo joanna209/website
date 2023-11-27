@@ -19,7 +19,7 @@
     "@remix-run/serve": "^1.9.0",
     "@sanity/client": "^6.4.9",
     "@sanity/image-url": "^1.0.2",
-    "@sanity/preview-kit": "^3.1.6",
+    "@sanity/preview-kit": "^4.0.0",
     "airtable": "^0.12.2",
     "isbot": "^3.6.5",
     "phosphor-react": "^1.4.1",
